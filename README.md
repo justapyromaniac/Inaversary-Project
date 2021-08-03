@@ -3,8 +3,10 @@ A little incremental game for our oshi's debut anniversary!
 
 ## Folders
 
-- inacremental: the actual app
 - documentation: any documentation/analysis of the app (currently empty and not in repo)
+- inacremental: the actual app
+- inacremental/src/components: folder for react components
 
 ## Contributor list
 
+## Contribution guide
