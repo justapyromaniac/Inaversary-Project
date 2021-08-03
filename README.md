@@ -8,5 +8,6 @@ A little incremental game for our oshi's debut anniversary!
 - inacremental/src/components: folder for react components
 
 ## Contributor list
-
+Just_a_pyro: repository owner, developer
 ## Contribution guide
+
