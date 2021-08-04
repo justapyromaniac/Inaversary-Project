@@ -1,5 +1,5 @@
 
-export default function MenuDropdownComponent() {
+export const DropdownMenuComponent: React.FC = () => {
     return(
         <div>
             

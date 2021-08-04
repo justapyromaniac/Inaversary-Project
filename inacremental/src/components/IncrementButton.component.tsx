@@ -1,11 +1,11 @@
 import ActiveGenerator from "../services/ActiveGenerator";
 //test for active generator
-export default function IncrementButtonComponent() {
+export const IncrementButtonComponent: React.FC = () => {
     const handleClick = () => {
-        ActiveGenerator.handleClick();
+        //ActiveGenerator.handleClick();
     }
 
     return (
-        <button onClick={() => handleClick()}>🍪</button>
+        <button onClick={handleClick}>🍪</button>
     );
 }

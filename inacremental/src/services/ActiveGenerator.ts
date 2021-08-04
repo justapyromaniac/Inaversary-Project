@@ -1,11 +1,14 @@
 import Generator from "./Generator";
 
 //class for an active generator. Parts you need to interact with for it to make resources
-class ActiveGenerator extends Generator {
+export default class ActiveGenerator extends Generator {
+
+    constructor(resourceName: string, generationValue: number) {
+        super(resourceName, generationValue);
+        
+    }
 
     public handleClick(): void {
-        Generator.increment()
+        super.increment()
     }
 }
-
-export default new ActiveGenerator();

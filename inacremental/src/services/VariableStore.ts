@@ -1,15 +1,18 @@
-import Counter from "./Counter";
-import Subject from "./Subject";
 import _ from "lodash";
 
 //a singleton class that will contain all global variables for resources in the game
 //call getInstance() and use one of the methods to increase or decrease the resource dynamically 
-class VariableStore implements Subject {
+
+export type UpdateObserver = (resourceName: string, resourceValue: number) => void;
+export type UpdateCountersList = (resources: Object) => void;
+class VariableStore {
 
     //the actual store of variables
     private Variables: Object
 
-    private Observers: Counter[];
+    private Observers: UpdateObserver[];
+
+    private CountersList: UpdateCountersList | undefined;
 
     //the only instance of this class ever
     private static _instance: VariableStore
@@ -19,6 +22,7 @@ class VariableStore implements Subject {
     private constructor() {
         this.Variables = {};
         this.Observers = [];
+        this.CountersList = undefined;
     }
 
     //The only way to actually get the class, to ensure noone can change the instance somehow
@@ -30,8 +34,8 @@ class VariableStore implements Subject {
         return this._instance;
     }
 
-    get getObservers(): Counter[] {
-        return this.Observers;
+    get getVariables(): Object {
+        return this.Variables;
     }
 
     //if the resource isn't registered, register it
@@ -41,12 +45,13 @@ class VariableStore implements Subject {
         //paranoid programming as I call it: if something shouldn't happen, even if it logically cannot, make sure it won't!
         //better safe than sorry
         if(!this.Variables.hasOwnProperty(keyName)) {
+            console.log("created")
             Object.defineProperty(this.Variables, keyName, {
                 value: value,
                 writable: true,
                 enumerable: true,
             });
-            this.registerObserver(new Counter(keyName, value));
+            this.notifyCountersList();
             this.notifyObservers(keyName, value);
         }
     }
@@ -57,25 +62,47 @@ class VariableStore implements Subject {
         if(!this.Variables.hasOwnProperty(keyName)) {
             this.createNewEntry(keyName, value);
         } else {
-            Object.entries(this.Variables).forEach(key => {if(key[0] === keyName){key[1] += value; this.notifyObservers(keyName, key[1]);}});
-            
+            Object.entries(this.Variables).forEach(key => {
+                if(key[0] === keyName) {
+                    key[1] = key[1] + value;
+                    let temp = {};
+                    Object.defineProperty(temp, key[0], {
+                        value: key[1],
+                        writable: true,
+                        enumerable: true,
+                    })
+                    Object.assign(this.Variables, temp)
+                    this.notifyObservers(keyName, key[1]);
+                }
+            });
+        }
+    }
+    
+    registerCountersList(CountersList: UpdateCountersList): void {
+        this.CountersList = CountersList;
+    }
+
+    removeCountersList(): void {
+        this.CountersList = undefined;
+    }
+
+    notifyCountersList(): void {
+        if(this.CountersList !== undefined) {
+            this.CountersList(this.Variables);
         }
     }
 
-    registerObserver(Counter: Counter): void {
-        this.Observers.push(Counter);
+    registerObserver(Observer: UpdateObserver): void {
+        this.Observers.push(Observer);
     }
 
-    removeObserver(Counter: Counter): void {
-        _.remove(this.Observers, Counter)
+    removeObserver(ObserverToRemove: UpdateObserver): void {
+        this.Observers = this.Observers.filter(Observer => !_.isEqual(ObserverToRemove, Observer))
     }
 
     notifyObservers(keyName: string, value: number): void {
-        this.Observers.forEach(counter => {
-            if(_.isEqual(counter.getResourceName, keyName)) {
-                counter.update(value);
-            }
-        })
+        this.Observers.forEach(Observer => Observer(keyName, value));
+        
     }
 }
 

@@ -1,6 +1,6 @@
 
 //top bar of the page layout
-export default function NavbarComponent() {
+export const NavbarComponent: React.FC = () => {
     return(
         <nav>
             

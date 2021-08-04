@@ -10,8 +10,11 @@
     "@types/node": "^12.20.18",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
+    "nanoid": "^3.1.23",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "typescript": "^4.3.5",
     "web-vitals": "^1.1.2"
@@ -41,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.172"
+    "@types/lodash": "^4.14.172",
+    "@types/react-router-dom": "^5.1.8"
   }
 }

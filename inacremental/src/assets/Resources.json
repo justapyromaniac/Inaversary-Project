@@ -1,0 +1,22 @@
+{
+    "ina": [
+        {
+            "resourceName": "cookie",
+            "generationType": "active"
+        },
+        {
+            "resourceName": "cookie 2",
+            "generationType": "passive"
+        }
+    ],
+    "gura": [
+        {
+            "resourceName": "shrimp",
+            "generationType": "active"
+        },
+        {
+            "resourceName": "shrimp 2",
+            "generationType": "passive"
+        }
+    ]
+}
