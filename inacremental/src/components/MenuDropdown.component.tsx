@@ -1,4 +1,5 @@
-export default function Counter() {
+
+export default function MenuDropdownComponent() {
     return(
         <div>
             

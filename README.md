@@ -16,6 +16,8 @@ A little incremental game for our oshi's debut anniversary!
 - 
 ## Contribution guide
 
+Create a new branch when you start working on the project, this makes oversight much easier.
+
 Write descriptive commit messages, explain what you changed.
 Write comments when making new functions and components! If you looked something up, explain it in a comment too
 
