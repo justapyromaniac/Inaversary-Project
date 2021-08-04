@@ -27,3 +27,5 @@ Keep components pure.
 Don't clutter them with functions that are not part of the component directly or explained within the name
 
 When installing packages, ensure you're in the inacremental folder!
+
+We're using material-ui for most of our components
