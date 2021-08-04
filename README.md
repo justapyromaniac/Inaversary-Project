@@ -12,5 +12,14 @@ A little incremental game for our oshi's debut anniversary!
 - Just_a_pyro: repository owner, developer
 - Rawrtuber: self proclaimed "idea guy"
 - lion: artist
+- Hardtgang | Tako Tech Tips: developer/bug tester
+- 
 ## Contribution guide
 
+Write descriptive commit messages, explain what you changed.
+Write comments when making new functions and components! If you looked something up, explain it in a comment too
+
+Keep components pure. 
+Don't clutter them with functions that are not part of the component directly or explained within the name
+
+When installing packages, ensure you're in the inacremental folder!
