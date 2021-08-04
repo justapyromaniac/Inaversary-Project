@@ -11,7 +11,7 @@ abstract class Generator  {
     }
 
     protected increment(): void {
-        VariableStore.addResource(this.resourceName, this.generationValue);
+        VariableStore.addResource(VariableStore.CurrentMember.name, this.resourceName, this.generationValue);
     }
 }
 

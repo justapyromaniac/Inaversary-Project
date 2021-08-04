@@ -10,8 +10,8 @@ A little incremental game for our oshi's debut anniversary!
 
 ## Contributor list
 - Just_a_pyro: repository owner, developer
-- Rawrtuber: self proclaimed "idea guy"
-- lion: artist
+- Rawrtuber: self proclaimed "idea guy" (creative lead)
+- lion: artist, designer
 - Hardtgang | Tako Tech Tips: developer/bug tester
   
 ## Contribution guide

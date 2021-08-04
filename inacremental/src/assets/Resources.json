@@ -1,22 +1,43 @@
 {
-    "ina": [
+    "members": [
         {
-            "resourceName": "cookie",
-            "generationType": "active"
+            "name": "ina",
+            "resources": [
+                {
+                    "resourceName": "cookie",
+                    "generationType": "active"
+                },
+                {
+                    "resourceName": "cookie 2",
+                    "generationType": "passive"
+                }
+            ]
         },
         {
-            "resourceName": "cookie 2",
-            "generationType": "passive"
-        }
-    ],
-    "gura": [
+            "name": "gura",
+            "resources": [
+                {
+                    "resourceName": "shrimp",
+                    "generationType": "active"
+                },
+                {
+                    "resourceName": "shrimp 2",
+                    "generationType": "passive"
+                }
+            ]
+        }, 
         {
-            "resourceName": "shrimp",
-            "generationType": "active"
-        },
-        {
-            "resourceName": "shrimp 2",
-            "generationType": "passive"
+            "name": "matsuri",
+            "resources": [
+                {
+                    "resourceName": "lanterns",
+                    "generationType": "active"
+                },
+                {
+                    "resourceName": "lanterns 2",
+                    "generationType": "passive"
+                }
+            ]
         }
     ]
 }
