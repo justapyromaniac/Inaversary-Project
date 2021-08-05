@@ -24,9 +24,6 @@ export const CounterListComponent: React.FC = () => {
         return () => VariableStore.removeCountersList();
     }, [currentMember.name])
 
-
-    console.log(counters);
-
     return(
         <div>
             {Object.entries(counters).map(x => {

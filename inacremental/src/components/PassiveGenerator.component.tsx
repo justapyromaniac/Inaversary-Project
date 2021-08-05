@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import PassiveGenerator from "../services/PassiveGenerator";
 import { Resource } from "../services/VariableStore";
 
-export const PassiveTakoComponent: React.FC<Resource> = (resource: Resource) => {
+export const PassiveGeneratorComponent: React.FC<Resource> = (resource: Resource) => {
     const [seconds, setSeconds] = useState(0);
-    const generator = new PassiveGenerator(resource.resourceName, 1);
-    const timeout = resource.timeout;
+    const generator = new PassiveGenerator(resource.resourceName, 1, resource.value, resource.timeout);
 
     const handleTimer = () => {
         generator.handleTimer();
@@ -14,7 +13,7 @@ export const PassiveTakoComponent: React.FC<Resource> = (resource: Resource) => 
     useEffect(() => {
         let interval = null;
 
-        if(seconds % resource.timeout == 0 ){
+        if(seconds > 0 && seconds % resource.timeout === 0){
             handleTimer();
         } 
 
@@ -26,6 +25,9 @@ export const PassiveTakoComponent: React.FC<Resource> = (resource: Resource) => 
     });
 
     return (
+       <div>
         <text>{seconds}</text>
+        <br></br>
+        </div>
     );
 }

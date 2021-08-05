@@ -16,8 +16,6 @@ export interface Resource {
 export interface Member {
     name: string,
     resources: Resource[],
-    timeout: number,
-    value: number
 }
 class VariableStore {
 
