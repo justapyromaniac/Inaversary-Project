@@ -4,28 +4,35 @@ import { Resource } from "../services/VariableStore";
 
 export const PassiveGeneratorComponent: React.FC<Resource> = (resource: Resource) => {
     const [seconds, setSeconds] = useState(0);
-    const generator = new PassiveGenerator(resource.resourceName, 1, resource.value, resource.timeout);
+    const [isActive, setActive] = useState(false);
+    const generator = new PassiveGenerator(resource.resourceName, resource.value, resource.timeout);
 
     const handleTimer = () => {
-        generator.handleTimer();
+        if(seconds > 0 && seconds % resource.timeout === 0){
+            generator.handleTimer();
+        }
     }
 
     useEffect(() => {
         let interval = null;
-
-        if(seconds > 0 && seconds % resource.timeout === 0){
+        if(isActive){
             handleTimer();
-        } 
-
-        interval = setInterval(() => { 
-            setSeconds(seconds => seconds + 1);
-        }, 1000);
+            interval = setInterval(() => { 
+                setSeconds(seconds => seconds + 1);
+            }, 1000);
+        }
 
         return () => clearInterval(interval);
     });
 
+    const activateTimer = () => {
+        setActive(!isActive);
+    }
+
     return (
-       <div>
+        <div>
+        <button onClick={activateTimer}>activate timer</button>
+        <br></br>
         <text>{seconds}</text>
         <br></br>
         </div>

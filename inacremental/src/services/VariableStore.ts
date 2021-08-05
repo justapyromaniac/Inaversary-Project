@@ -87,7 +87,7 @@ class VariableStore {
         const resourceEntryExists = this.Variables[member as keyof Object] !== undefined && (keyName in this.Variables[member as keyof Object])
         if(!resourceEntryExists || !memberEntryExists) {
             this.createNewEntry(member, keyName, value);
-        } else {
+        } else {        
             Object.entries(this.Variables[member as keyof Object]).forEach(key => {
                 if(key[0] === keyName) {
                     key[1] = key[1] + value;
@@ -104,7 +104,7 @@ class VariableStore {
             });
         }
     }
-    
+
     registerCountersList(CountersList: UpdateCountersList): void {
         this.CountersList = CountersList;
     }
