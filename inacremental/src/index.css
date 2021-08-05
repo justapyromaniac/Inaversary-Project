@@ -4,6 +4,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen {
+  html {
+    height: 100%;
+    width: 100%;
+  }
+} 
+
+#root {
+  height: 100%;
+  width: 100%;
 }
 
 code {

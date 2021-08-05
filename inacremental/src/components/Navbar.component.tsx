@@ -20,13 +20,18 @@ const useStyles = makeStyles((theme) => ({
     fullList: {
         width: 'auto',
     },
+    toolBar: {
+        display: 'flex',
+        flexDirection: 'row-reverse'
+    },
 }));
 
 //top bar of the page layout
 export const NavbarComponent: React.FC = () => {
+    const anchor = "right";
     const classes = useStyles();
     const [state, setState] = useState({
-        left: false,
+        right: false,
     });
     
     const toggleDrawer = (anchor: string, open: boolean) => (event: any) => {
@@ -39,7 +44,8 @@ export const NavbarComponent: React.FC = () => {
 
     const handleMemberChange = (member: Member) => { 
         VariableStore.CurrentMember = member;
-        setState({"left": false });
+        toggleDrawer(anchor, false)
+        //setState({anchor: false });
     }
 
     const generateLinks = (members: Member[]) => {
@@ -47,20 +53,20 @@ export const NavbarComponent: React.FC = () => {
             <div
             className={classes.list}
             role="presentation"
-            onClick={toggleDrawer("left", false)}
-            onKeyDown={toggleDrawer("left", false)}
+            onClick={toggleDrawer(anchor, false)}
+            onKeyDown={toggleDrawer(anchor, false)}
             >
-            <List>
-            {
-                members.map(member => {
-                    return (
-                        <ListItem key={nanoid()} button component={Link} to={member.name} onClick={() => handleMemberChange(member)}>
-                            <ListItemText primary={member.name}/>
-                        </ListItem>
-                    );
-                })
-            }
-            </List>
+                <List>
+                {
+                    members.map(member => {
+                        return (
+                            <ListItem key={nanoid()} button component={Link} to={member.name} onClick={() => handleMemberChange(member)}>
+                                <ListItemText primary={member.name}/>
+                            </ListItem>
+                        );
+                    })
+                }
+                </List>
             </div>
         )
     }
@@ -68,14 +74,14 @@ export const NavbarComponent: React.FC = () => {
 
     return(
         <AppBar>
-            <Toolbar>
-                <Button onClick={toggleDrawer('left', true)}>Select member</Button>
+            <Toolbar className={classes.toolBar}>
+                <Button onClick={toggleDrawer(anchor, true)}>Select member</Button>
             </Toolbar>
             <SwipeableDrawer
-                anchor="left"
-                open={state["left"]}
-                onClose={toggleDrawer("left", false)}
-                onOpen={toggleDrawer("left", true)}
+                anchor={anchor}
+                open={state[anchor]}
+                onClose={toggleDrawer(anchor, false)}
+                onOpen={toggleDrawer(anchor, true)}
             >
                 {generateLinks(data.members)}
             </SwipeableDrawer>
