@@ -1,21 +1,39 @@
 import React from 'react';
 import './App.css';
 import * as data  from './assets/Resources.json'
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { MembersPageComponent } from './components/MemberPage';
 import { nanoid } from 'nanoid';
-import VariableStore, { Member } from './services/VariableStore';
+import { Member } from './services/VariableStore';
+import { makeStyles, Container, CssBaseline} from '@material-ui/core';
+import { NavbarComponent } from './components/Navbar.component';
 
 /*
   General layout of the app. contains navigation, main gameplay and menus
 */
-
+//material-ui in file styling. this functions just like scss/sass
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    height: '100%',
+    width: '100%',
+  },
+  appBarSpacer: theme.mixins.toolbar,
+  content: {
+      flexGrow: 3,
+      height: '100%',
+      width: '100%',
+      overflow: 'hidden',
+  },
+  container: {
+      height: '100%',
+      width: '100%',
+      margin: 0
+  },
+}));
 //the application needs to rerender for every increment of a resource, but also every new resource that is made
 const App: React.FC = () => {
-
-  const handleMemberChange = (member: Member) => { 
-    VariableStore.CurrentMember = member;
-  }
+  const classes = useStyles();
 
   const generateRoutes = (members: Member[]) => {
     return(
@@ -29,22 +47,20 @@ const App: React.FC = () => {
       </Switch>
     );
   }
-
-  const generateLinks = (members: Member[]) => {
-    return( 
-    <div>
-      {
-        members.map(member => {
-          return <button key={nanoid()} onClick={() => handleMemberChange(member)}><Link to={member.name}>{member.name}</Link></button> 
-        })
-      }
-    </div>)
-  }
-
+  //move the appbar and drawer into the navbar component and fix padding there.
+  //currently the appbar overlaps with the content, making it partially invisible
   return (
     <BrowserRouter>
-        {generateLinks(data.members)}
-        {generateRoutes(data.members)}
+      <CssBaseline />
+      <div className={classes.root}>
+        <NavbarComponent/>
+        <main className={classes.content}>
+          <div className={classes.appBarSpacer}/>
+          <Container className={classes.container} disableGutters={true} maxWidth={false}>
+            {generateRoutes(data.members)}
+          </Container>
+        </main>
+      </div>
     </BrowserRouter>
   );
 }

@@ -1,7 +1,7 @@
 {
     "members": [
         {
-            "name": "ina",
+            "name": "Ninomae Ina'nis",
             "resources": [
                 {
                     "resourceName": "cookie",
@@ -14,7 +14,7 @@
             ]
         },
         {
-            "name": "gura",
+            "name": "Gawr Gura",
             "resources": [
                 {
                     "resourceName": "shrimp",
@@ -27,7 +27,7 @@
             ]
         }, 
         {
-            "name": "matsuri",
+            "name": "Natsuiro Matsuri",
             "resources": [
                 {
                     "resourceName": "lanterns",

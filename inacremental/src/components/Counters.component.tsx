@@ -1,7 +1,5 @@
 //collection of all counters that need to be displayed
 //displayed counters vary on th active character
-
-import _ from "lodash";
 import { nanoid } from "nanoid";
 import { useEffect, useState } from "react";
 import VariableStore, { UpdateCountersList } from "../services/VariableStore";
