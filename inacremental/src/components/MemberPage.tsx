@@ -4,6 +4,7 @@ import VariableStore from '../services/VariableStore';
 import { CounterListComponent } from './Counters.component';
 import { IncrementButtonComponent } from './IncrementButton.component';
 import {nanoid} from 'nanoid'
+import {PassiveTakoComponent} from './PassiveTakoComponent';
 
 const useStyles = makeStyles((theme) => ({
     gridContainer: {
@@ -30,6 +31,16 @@ export const MembersPageComponent: React.FC = () => {
         })
     }
 
+    const generatePassiveGenerator = () => {
+        return currentMember.resources.map(resource => {
+            if(_.isEqual(resource.generationType, "passive")) {
+                return <PassiveTakoComponent key={nanoid()} {...resource}/>
+            } else {
+                return null;
+            }
+        })
+    }
+
     return(
         <Grid container spacing={1} className={classes.gridContainer}>
             <Grid item xs={4} className={classes.gridItem}>
@@ -40,6 +51,8 @@ export const MembersPageComponent: React.FC = () => {
             </Grid>
             <Grid item xs={4} className={classes.gridItem}>
                 <Typography>Idle generators (Coming soon!)</Typography>
+                <br/>
+                {generatePassiveGenerator()}
             </Grid>
             <Grid item xs={4} className={classes.gridItem}>
             <Typography>Upgrades (Coming soon!)</Typography>

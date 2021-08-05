@@ -9,11 +9,15 @@ export type UpdateCountersList = (resources: Object) => void;
 
 export interface Resource {
     resourceName: string,
-    generationType: string
+    generationType: string,
+    timeout: number,
+    value: number
 }
 export interface Member {
     name: string,
     resources: Resource[],
+    timeout: number,
+    value: number
 }
 class VariableStore {
 
