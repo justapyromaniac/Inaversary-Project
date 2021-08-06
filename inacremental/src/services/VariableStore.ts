@@ -10,8 +10,8 @@ export type UpdateCountersList = (resources: Object) => void;
 export interface Resource {
     resourceName: string,
     generationType: string,
-    timeout: number,
-    value: number
+    productionCooldown: number,
+    generationValue: number
 }
 export interface Member {
     name: string,
@@ -97,6 +97,8 @@ class VariableStore {
                         writable: true,
                         enumerable: true,
                     })
+
+                    console.log(key[0], key[1]);
                     Object.assign(this.Variables[member as keyof Object], temp)
                     this.notifyCountersList();
                     this.notifyObservers(keyName, key[1]);

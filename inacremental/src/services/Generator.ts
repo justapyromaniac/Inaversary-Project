@@ -4,12 +4,12 @@ import VariableStore from "./VariableStore";
 abstract class Generator  {
     private resourceName: string;
     private generationValue: number;
-    private timeout: number;
+    private productionCooldown: number;
 
-    protected constructor(resourceName: string, generationValue: number, timeout: number) {
+    protected constructor(resourceName: string, generationValue: number, productionCooldown: number) {
         this.resourceName = resourceName;
         this.generationValue = generationValue;
-        this.timeout = timeout;
+        this.productionCooldown = productionCooldown;
     }
 
     protected increment(): void {
