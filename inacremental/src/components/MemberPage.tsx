@@ -22,9 +22,9 @@ export const MembersPageComponent: React.FC = () => {
     const currentMember = VariableStore.CurrentMember;
 
     const generateActiveGenerators = () => {
-        return currentMember.resources.map(resource => {
-            if(_.isEqual(resource.generationType, "active")) {
-                return <IncrementButtonComponent key={nanoid()} {...resource}/>
+        return currentMember.generators.map(generator => {
+            if(_.isEqual(generator.generationType, "active")) {
+                return <IncrementButtonComponent key={nanoid()} {...generator}/>
             } else {
                 return null;
             }
@@ -32,9 +32,9 @@ export const MembersPageComponent: React.FC = () => {
     }
 
     const generatePassiveGenerator = () => {
-        return currentMember.resources.map(resource => {
-            if(_.isEqual(resource.generationType, "passive")) {
-                return <PassiveGeneratorComponent key={nanoid()} {...resource} />
+        return currentMember.generators.map(generator => {
+            if(_.isEqual(generator.generationType, "passive")) {
+                return <PassiveGeneratorComponent key={nanoid()} {...generator}/>
             } else {
                 return null;
             }

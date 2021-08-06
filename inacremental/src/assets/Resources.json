@@ -2,40 +2,70 @@
     "members": [
         {
             "name": "Ninomae Ina'nis",
-            "resources": [
+            "resource": "cookies",
+            "generators": [
                 {
-                    "resourceName": "cookie",
-                    "generationType": "active"
+                    "generatorName": "cookies",
+                    "generationType": "active",
+                    "generatorCooldown": 0,
+                    "generationValue": 0
                 },
                 {
-                    "resourceName": "cookie 2",
-                    "generationType": "passive"
+                    "generatorName": "cookies 1",
+                    "generationType": "passive",
+                    "generatorCooldown": 5,
+                    "generationValue": 1
+                },
+                
+                {
+                    "generatorName": "cookies 2",
+                    "generationType": "passive",
+                    "generatorCooldown": 15,
+                    "generationValue": 1000
+                },
+                
+                {
+                    "generatorName": "cookies 3",
+                    "generationType": "passive",
+                    "generatorCooldown": 30,
+                    "generationValue": 1000000
                 }
             ]
         },
         {
             "name": "Gawr Gura",
-            "resources": [
+            "resource": "shrimps",
+            "generators": [
                 {
-                    "resourceName": "shrimp",
-                    "generationType": "active"
+                    "generatorName": "shrimp",
+                    "generationType": "active",
+                    "generatorCooldown": 0,
+                    "generationValue": 0
                 },
                 {
-                    "resourceName": "shrimp 2",
-                    "generationType": "passive"
+                    "generatorName": "shrimp 2",
+                    "generationType": "passive",
+                    "generatorCooldown": 5,
+                    "generationValue": 1
                 }
             ]
         }, 
         {
             "name": "Natsuiro Matsuri",
-            "resources": [
+            
+            "resource": "lanterns",
+            "generators": [
                 {
-                    "resourceName": "lanterns",
-                    "generationType": "active"
+                    "generatorName": "lanterns",
+                    "generationType": "active",
+                    "generatorCooldown": 0,
+                    "generationValue": 0
                 },
                 {
-                    "resourceName": "lanterns 2",
-                    "generationType": "passive"
+                    "generatorName": "lanterns 2",
+                    "generationType": "passive",
+                    "generatorCooldown": 5,
+                    "generationValue": 1
                 }
             ]
         }

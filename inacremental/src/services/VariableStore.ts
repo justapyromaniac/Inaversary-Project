@@ -8,14 +8,15 @@ export type UpdateObserver = (resourceName: string, resourceValue: number) => vo
 export type UpdateCountersList = (resources: Object) => void;
 
 export interface Resource {
-    resourceName: string,
+    generatorName: string,
     generationType: string,
-    productionCooldown: number,
+    generatorCooldown: number,
     generationValue: number
 }
 export interface Member {
     name: string,
-    resources: Resource[],
+    resource: string,
+    generators: Resource[]
 }
 class VariableStore {
 
@@ -81,8 +82,9 @@ class VariableStore {
     }
 
     //increase the resource count
-    public addResource(member: string, keyName: string, value: number): void {
+    public addResource(member: string, value: number): void {
         //check if the resource actually exists before increasing it, otherwise you'll get an error
+        let keyName = this.CurrentMember.resource;
         const memberEntryExists = _.includes(Object.keys(this.Variables), member)
         const resourceEntryExists = this.Variables[member as keyof Object] !== undefined && (keyName in this.Variables[member as keyof Object])
         if(!resourceEntryExists || !memberEntryExists) {
@@ -98,7 +100,6 @@ class VariableStore {
                         enumerable: true,
                     })
 
-                    console.log(key[0], key[1]);
                     Object.assign(this.Variables[member as keyof Object], temp)
                     this.notifyCountersList();
                     this.notifyObservers(keyName, key[1]);

@@ -2,18 +2,16 @@ import VariableStore from "./VariableStore";
 
 //abstract class for resource generators, will contain all shared upgrade variables and general incrementing logic
 abstract class Generator  {
-    private resourceName: string;
+    private generatorName: string;
     private generationValue: number;
-    private productionCooldown: number;
 
-    protected constructor(resourceName: string, generationValue: number, productionCooldown: number) {
-        this.resourceName = resourceName;
+    protected constructor(generatorName: string, generationValue: number, generatorCooldown: number) {
+        this.generatorName = generatorName;
         this.generationValue = generationValue;
-        this.productionCooldown = productionCooldown;
     }
 
     protected increment(): void {
-        VariableStore.addResource(VariableStore.CurrentMember.name, this.resourceName, this.generationValue);
+        VariableStore.addResource(VariableStore.CurrentMember.name, this.generationValue);
     }
 }
 
