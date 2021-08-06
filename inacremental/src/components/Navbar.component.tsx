@@ -12,6 +12,7 @@ import {
     List, 
     ListItem, 
     ListItemText } from '@material-ui/core';
+import Generator from '../services/Generator';
 
 const useStyles = makeStyles((theme) => ({
     list: {
@@ -71,7 +72,6 @@ export const NavbarComponent: React.FC = () => {
         )
     }
 
-
     return(
         <AppBar>
             <Toolbar className={classes.toolBar}>
@@ -83,7 +83,7 @@ export const NavbarComponent: React.FC = () => {
                 onClose={toggleDrawer(anchor, false)}
                 onOpen={toggleDrawer(anchor, true)}
             >
-                {generateLinks(data.members)}
+                {generateLinks(data.generations[0].members)}
             </SwipeableDrawer>
         </AppBar>
     );

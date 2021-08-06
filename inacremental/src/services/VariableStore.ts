@@ -7,17 +7,22 @@ import * as data  from '../assets/Resources.json'
 export type UpdateObserver = (resourceName: string, resourceValue: number) => void;
 export type UpdateCountersList = (resources: Object) => void;
 
-export interface Resource {
+export interface VariableGenerator {
     generatorName: string,
-    generationType: string,
-    generatorCooldown: number,
-    generationValue: number
+    resourceName: string,
+    generationType: string
 }
+
+export interface PassiveVariableGenerator extends VariableGenerator{
+    generatorCooldown: number,
+    generatorValue: number
+}
+
 export interface Member {
     name: string,
-    resource: string,
-    generators: Resource[]
+    generators: VariableGenerator[]
 }
+
 class VariableStore {
 
     //the actual store of variables
@@ -38,7 +43,8 @@ class VariableStore {
         this.Variables = {};
         this.Observers = [];
         this.CountersList = undefined;
-        this.CurrentMember = data.members[0];
+        let members: Member[];
+        this.CurrentMember = data.generations[0].members[0];
     }
 
     //The only way to actually get the class, to ensure noone can change the instance somehow
@@ -82,9 +88,9 @@ class VariableStore {
     }
 
     //increase the resource count
-    public addResource(member: string, value: number): void {
+    public increaseMemberResource(member: string, value: number): void {
         //check if the resource actually exists before increasing it, otherwise you'll get an error
-        let keyName = this.CurrentMember.resource;
+        let keyName = this.CurrentMember.generators[0].resourceName;
         const memberEntryExists = _.includes(Object.keys(this.Variables), member)
         const resourceEntryExists = this.Variables[member as keyof Object] !== undefined && (keyName in this.Variables[member as keyof Object])
         if(!resourceEntryExists || !memberEntryExists) {

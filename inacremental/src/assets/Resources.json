@@ -1,73 +1,26 @@
 {
-    "members": [
+    "generations": [
+    {
+      "generationName": "holoMyth",
+      "members": [
         {
-            "name": "Ninomae Ina'nis",
-            "resource": "cookies",
+          "name": "Ninomae Ina'nis",
             "generators": [
-                {
-                    "generatorName": "cookies",
-                    "generationType": "active",
-                    "generatorCooldown": 0,
-                    "generationValue": 0
-                },
-                {
-                    "generatorName": "cookies 1",
-                    "generationType": "passive",
-                    "generatorCooldown": 5,
-                    "generationValue": 1
-                },
-                
-                {
-                    "generatorName": "cookies 2",
-                    "generationType": "passive",
-                    "generatorCooldown": 15,
-                    "generationValue": 1000
-                },
-                
-                {
-                    "generatorName": "cookies 3",
-                    "generationType": "passive",
-                    "generatorCooldown": 30,
-                    "generationValue": 1000000
-                }
-            ]
-        },
-        {
-            "name": "Gawr Gura",
-            "resource": "shrimps",
-            "generators": [
-                {
-                    "generatorName": "shrimp",
-                    "generationType": "active",
-                    "generatorCooldown": 0,
-                    "generationValue": 0
-                },
-                {
-                    "generatorName": "shrimp 2",
-                    "generationType": "passive",
-                    "generatorCooldown": 5,
-                    "generationValue": 1
-                }
-            ]
-        }, 
-        {
-            "name": "Natsuiro Matsuri",
-            
-            "resource": "lanterns",
-            "generators": [
-                {
-                    "generatorName": "lanterns",
-                    "generationType": "active",
-                    "generatorCooldown": 0,
-                    "generationValue": 0
-                },
-                {
-                    "generatorName": "lanterns 2",
-                    "generationType": "passive",
-                    "generatorCooldown": 5,
-                    "generationValue": 1
-                }
-            ]
+            {
+                "generatorName": "generator 1",
+                "resourceName": "Takodachi 🐙",
+                "generationType": "active"
+            },
+            {
+                "generatorName": "generator 2",
+                "resourceName": "Takodachi 🐙",
+                "generationType": "passive",
+                "generatorCooldown": 2,
+                "generatorValue": 1
+            }
+        ]
         }
+      ]
+    }
     ]
-}
+  }

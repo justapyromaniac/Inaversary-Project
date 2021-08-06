@@ -5,8 +5,8 @@ export default class ActiveGenerator extends Generator {
 
     
     // eslint-disable-next-line @typescript-eslint/no-useless-constructor
-    constructor(generatorName: string, generationValue: number, generatorCooldown: number) {
-        super(generatorName, generationValue, generatorCooldown);
+    constructor(generatorName: string) {
+        super(generatorName, 1);
     }
 
     public handleClick(): void {
