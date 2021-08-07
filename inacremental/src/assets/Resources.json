@@ -162,6 +162,16 @@
                         }
                     ]
                 }
+            ],
+            "upgrades": [
+                {
+                    "name": "Ancient One's Cookie Dough",
+                    "type": "active",
+                    "purchasePrice": 20,
+                    "purchaseResourceName": "Takodachi 🐙",
+                    "generatorName": "cookie",
+                    "valueMultiplier": 3.0
+                }
             ]
         },
         {
@@ -203,7 +213,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "upgrades": []
         }, 
         {
             "generationName": "hololive 3rd gen",
@@ -559,7 +570,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "upgrades": []
         }
     ]
 }

@@ -7,6 +7,18 @@ import * as data  from '../assets/Resources.json'
 export type UpdateObserver = (resourceName: string, resourceValue: number) => void;
 export type UpdateCountersList = (resources: Object) => void;
 
+export interface ActiveGeneratorUpgradeVariable extends UpgradeVariable {
+    generatorName: string;
+    valueMultiplier: number;
+}
+
+export interface UpgradeVariable {
+    name: string,
+    type: string,
+    purchasePrice: number,
+    purchaseResourceName: string
+}
+
 export interface Resource {
     resourceName: string,
     generationType: string
@@ -15,6 +27,7 @@ export interface Resource {
 export interface Member {
     name: string,
     resources: Resource[],
+    upgrades: UpgradeVariable[],
 }
 
 export interface Generation {

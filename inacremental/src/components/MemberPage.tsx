@@ -4,6 +4,7 @@ import VariableStore from '../services/VariableStore';
 import { CounterListComponent } from './Counters.component';
 import { IncrementButtonComponent } from './IncrementButton.component';
 import {nanoid} from 'nanoid'
+import UpgradeListComponent from './UpgradeList.component';
 
 const useStyles = makeStyles((theme) => ({
     gridContainer: {
@@ -42,7 +43,10 @@ export const MembersPageComponent: React.FC = () => {
                 <Typography>Idle generators (Coming soon!)</Typography>
             </Grid>
             <Grid item xs={4} className={classes.gridItem}>
-            <Typography>Upgrades (Coming soon!)</Typography>
+            <Grid item xs={4} className={classes.gridItem}>
+                <Typography>Upgrades</Typography>
+                <UpgradeListComponent upgrades={currentMember.upgrades} />
+            </Grid>
             </Grid>
         </Grid>
     );
