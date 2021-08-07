@@ -4,7 +4,7 @@ import * as data  from './assets/Resources.json'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { MembersPageComponent } from './components/MemberPage';
 import { nanoid } from 'nanoid';
-import { Member } from './services/VariableStore';
+import { Member } from './services/Member';
 import { makeStyles, Container, CssBaseline} from '@material-ui/core';
 import { NavbarComponent } from './components/Navbar.component';
 
@@ -57,7 +57,7 @@ const App: React.FC = () => {
         <main className={classes.content}>
           <div className={classes.appBarSpacer}/>
           <Container className={classes.container} disableGutters={true} maxWidth={false}>
-            {generateRoutes(data.members)}
+            {generateRoutes(data.generations[0].members)}
           </Container>
         </main>
       </div>

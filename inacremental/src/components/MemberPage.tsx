@@ -1,6 +1,7 @@
 import { Grid, makeStyles, Typography } from '@material-ui/core';
 import _ from 'lodash';
-import VariableStore, { VariableGenerator, PassiveVariableGenerator } from '../services/VariableStore';
+import VariableStore from '../services/VariableStore';
+import { Generator, PassiveVariableGenerator } from '../services/Generator';
 import { CounterListComponent } from './Counters.component';
 import { IncrementButtonComponent } from './IncrementButton.component';
 import {nanoid} from 'nanoid'

@@ -1,6 +1,8 @@
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
-import VariableStore, { Member } from '../services/VariableStore';
+import VariableStore from '../services/VariableStore';
+import {Generator} from '../services/Generator';
+import {Member} from '../services/Member';
 import * as data  from '../assets/Resources.json'
 import { Link } from 'react-router-dom';
 import { 
@@ -12,7 +14,7 @@ import {
     List, 
     ListItem, 
     ListItemText } from '@material-ui/core';
-import Generator from '../services/Generator';
+import GeneratorService from '../services/GeneratorService';
 
 const useStyles = makeStyles((theme) => ({
     list: {

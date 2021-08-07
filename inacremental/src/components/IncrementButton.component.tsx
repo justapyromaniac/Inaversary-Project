@@ -1,8 +1,8 @@
-import ActiveGenerator from "../services/ActiveGenerator";
-import { VariableGenerator } from "../services/VariableStore";
+import ActiveGeneratorService from "../services/ActiveGeneratorService";
+import { Generator } from "../services/Generator";
 //test for active generator
-export const IncrementButtonComponent: React.FC<VariableGenerator> = (resource: VariableGenerator) => {
-    const generator = new ActiveGenerator(resource.generatorName);
+export const IncrementButtonComponent: React.FC<Generator> = (resource: Generator) => {
+    const generator = new ActiveGeneratorService(resource.generatorName);
     const handleClick = () => {
         generator.handleClick();
     }

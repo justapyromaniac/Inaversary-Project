@@ -11,7 +11,6 @@ export const CounterListComponent: React.FC = () => {
     const [counters, setCounters] = useState<Object>({});
 
     const onUpdate: UpdateCountersList = (resources: Object) => {
-        
         setCounters(resources);
     }
     

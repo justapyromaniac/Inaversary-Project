@@ -1,27 +1,12 @@
 import _ from "lodash";
 import * as data  from '../assets/Resources.json'
+import { Member } from "./Member";
 
 //a singleton class that will contain all global variables for resources in the game
 //call getInstance() and use one of the methods to increase or decrease the resource dynamically 
 
 export type UpdateObserver = (resourceName: string, resourceValue: number) => void;
 export type UpdateCountersList = (resources: Object) => void;
-
-export interface VariableGenerator {
-    generatorName: string,
-    resourceName: string,
-    generationType: string
-}
-
-export interface PassiveVariableGenerator extends VariableGenerator{
-    generatorCooldown: number,
-    generatorValue: number
-}
-
-export interface Member {
-    name: string,
-    generators: VariableGenerator[]
-}
 
 class VariableStore {
 
