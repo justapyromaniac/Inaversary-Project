@@ -1,7 +1,7 @@
 import { Grid, makeStyles, Typography } from '@material-ui/core';
 import _ from 'lodash';
 import VariableStore from '../services/VariableStore';
-import { Generator, PassiveVariableGenerator } from '../services/Generator';
+import { Generator, PassiveGenerator } from '../services/Generator';
 import { CounterListComponent } from './Counters.component';
 import { IncrementButtonComponent } from './IncrementButton.component';
 import {nanoid} from 'nanoid'
@@ -35,7 +35,7 @@ export const MembersPageComponent: React.FC = () => {
     const generatePassiveGenerator = () => {
         return currentMember.generators.map(generator => {
             if(_.isEqual(generator.generationType, "passive")) {
-                return <PassiveGeneratorComponent key={nanoid()} {...generator as PassiveVariableGenerator}/>
+                return <PassiveGeneratorComponent key={nanoid()} {...generator as PassiveGenerator}/>
             } else {
                 return null;
             }
