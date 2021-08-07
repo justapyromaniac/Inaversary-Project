@@ -1,41 +1,563 @@
 {
-    "members": [
+    "generations": [
         {
-            "name": "Ninomae Ina'nis",
-            "resources": [
+            "generationName": "hololive 0th gen",
+            "members": [
                 {
-                    "resourceName": "cookie",
-                    "generationType": "active"
+                    "name": "Tokino Sora (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Soratomo 🐻",
+                            "generationType": "active"
+                        }
+                    ]
                 },
                 {
-                    "resourceName": "cookie 2",
-                    "generationType": "passive"
+                    "name": "Roboco (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Robosa 🤖",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Sakura Miko (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Mikopi 🌸",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Hishomachi Suisei (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Hoshiyomi ☄️",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "AZKi (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Pioneers ⚒️",
+                            "generationType": "active"
+                        }
+                    ]
+                }            
+            ]
+        },
+        {
+            "generationName": "INoNaKa Music",
+            "members": [
+                {
+                    "name": "AZKi (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Pioneers ⚒️",
+                            "generationType": "active"
+                        }
+                    ]
                 }
             ]
         },
         {
-            "name": "Gawr Gura",
-            "resources": [
+            "generationName": "hololive 1st gen",
+            "members": [
                 {
-                    "resourceName": "shrimp",
-                    "generationType": "active"
+                    "name": "Yozora Mel (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Kapu-min 🌟",
+                            "generationType": "active"
+                        }
+                    ]
                 },
                 {
-                    "resourceName": "shrimp 2",
-                    "generationType": "passive"
+                    "name": "Aki Rosenthal (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Rose-tai 🍎",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Natsuiro Matsuri (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Matsurisu 🏮",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Shirakami Fubuki (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Sukon-bu 🌽",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Akai Haato (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Haaton ❣️",
+                            "generationType": "active"
+                        }
+                    ]
                 }
             ]
         }, 
         {
-            "name": "Natsuiro Matsuri",
-            "resources": [
+            "generationName": "hololive 2nd gen",
+            "members": [
                 {
-                    "resourceName": "lanterns",
-                    "generationType": "active"
+                    "name": "Minato Aqua (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Aqua crew ⚓️",
+                            "generationType": "active"
+                        }
+                    ]
                 },
                 {
-                    "resourceName": "lanterns 2",
-                    "generationType": "passive"
+                    "name": "Murasaki Shion (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Shiokko 🌙",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Nakiri Ayame (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Nakiri-gumi 👿",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Yuzuki Choco (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Choco mate 🍫💋",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Oozora Subaru (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Suba-tomo 🚑",
+                            "generationType": "active"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "generationName": "hololive GAMERS",
+            "members": [
+                {
+                    "name": "Shirakami Fubuki (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Sukon-bu 🌽",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Ookami Mio (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Mio-fa 🌲",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Nekomata Okayu (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Onigiryaa 🍙",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Inugami Korone (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Koronesuki 🥐",
+                            "generationType": "active"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "generationName": "hololive 3rd gen",
+            "members": [
+                {
+                    "name": "Usada Pekora (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Nousagi ⚓️",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Uruha Rushia (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Fandeddo 🦋",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Shiranui Flare (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Elfriend 🔥",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Shirogane Noel (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Shirogane kishi-dan ⚔️",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Houshou Marine (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Houshou no Ichimi 🏴‍☠️",
+                            "generationType": "active"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "generationName": "hololive 4th gen",
+            "members": [
+                {
+                    "name": "Tsunomaki Watame (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Wata-mates 🐏",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tokoyami Towa (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Tokoyami Kenzoku 👾",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Amane Kanata (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Heimin 💫",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Himemori Luna (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Lu-knight 🍬",
+                            "generationType": "active"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "generationName": "hololive 5th gen",
+            "members": [
+                {
+                    "name": "Yukihana Lamy (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Yuki-min ☃️",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Momosuzu Nene (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Nekko 🥟",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Shishiro Botan (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "SSRB ♌",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Omaru Polka (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Omaruza 🎪",
+                            "generationType": "active"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "generationName": "holoID 1st gen",
+            "members": [
+                {
+                    "name": "Airani Iofifteen (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "IOFORIA 🎨",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Moona Hoshinova (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Moonafic 🔮",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Ayunda Risu (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Risuners 🐿️",
+                            "generationType": "active"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "generationName": "holoID 2nd gen",
+            "members": [
+                {
+                    "name": "Kureiji Ollie (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Zomrades 🧟‍♀️",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Anya Melfissa (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Melfriends 🍂",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pavolia Reine (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "MERAKyats 🦚",
+                            "generationType": "active"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "generationName": "holoMyth",
+            "members": [
+                {
+                    "name": "Ninomae Ina'nis",
+                    "resources": [
+                        {
+                            "resourceName": "Takodachi 🐙",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Takanashi Kiara (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Kiara Fan Club 🐔",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Watson Amelia (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Teamates 🔎",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Mori Calliope (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Dead Beats 💀",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Gawr Gura (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Chumbuds 🔱",
+                            "generationType": "active"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "generationName": "Project: HOPE",
+            "members": [
+                {
+                    "name": "IRyS (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "IRyStocrats 💎",
+                            "generationType": "active"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "generationName": "holostars 1st gen",
+            "members": [
+                {
+                "name": "Hanasaki Miyabi (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Hanami-gumi 🌺",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Kanade Izuru (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Nothing gang 🎸",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Arurandeisu (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Familiaran 🍕",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Rikka (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Tuner ⚙️",
+                            "generationType": "active"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "generationName": "holostars 2nd gen",
+            "members": [
+                {
+                    "name": "Astel Leda (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Astellas 🎭",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Kishido Temma (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Kishi-men 🦔💨",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Yukoku Roberu (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Regulars 🍷",
+                            "generationType": "active"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "generationName": "holostars 3rd gen",
+            "members": [
+                {
+                    "name": "Kageyama Shien (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "Shiengumi 🟣",
+                            "generationType": "active"
+                        }
+                    ]
+                },
+                {
+                    "name": "Aragami Oga (Coming soon!)",
+                    "resources": [
+                        {
+                            "resourceName": "OMAEsan 🐃",
+                            "generationType": "active"
+                        }
+                    ]
                 }
             ]
         }

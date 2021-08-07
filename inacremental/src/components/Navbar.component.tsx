@@ -1,8 +1,8 @@
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
-import VariableStore, { Member } from '../services/VariableStore';
+import { Generation } from '../services/VariableStore';
 import * as data  from '../assets/Resources.json'
-import { Link } from 'react-router-dom';
+import { GenerationListItem } from './GenerationListItem.component';
 import { 
     makeStyles, 
     Button, 
@@ -10,12 +10,13 @@ import {
     AppBar, 
     Toolbar, 
     List, 
-    ListItem, 
-    ListItemText } from '@material-ui/core';
+} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     list: {
-        width: 250,
+        width: 340,
+        padding: theme.spacing(2),
+        overflowX: 'hidden',
     },
     fullList: {
         width: 'auto',
@@ -42,35 +43,19 @@ export const NavbarComponent: React.FC = () => {
         setState({ ...state, [anchor]: open });
     };
 
-    const handleMemberChange = (member: Member) => { 
-        VariableStore.CurrentMember = member;
-        toggleDrawer(anchor, false)
-        //setState({anchor: false });
-    }
-
-    const generateLinks = (members: Member[]) => {
-        return( 
-            <div
-            className={classes.list}
-            role="presentation"
-            onClick={toggleDrawer(anchor, false)}
-            onKeyDown={toggleDrawer(anchor, false)}
-            >
-                <List>
+    const generateMemberList = (generations: Generation[]) => {
+        return(
+            <List>
                 {
-                    members.map(member => {
-                        return (
-                            <ListItem key={nanoid()} button component={Link} to={member.name} onClick={() => handleMemberChange(member)}>
-                                <ListItemText primary={member.name}/>
-                            </ListItem>
+                    generations.map(generation => {
+                        return(
+                            <GenerationListItem key={nanoid()} generation={generation} anchor={anchor} toggleDrawer={toggleDrawer}/>
                         );
                     })
                 }
-                </List>
-            </div>
-        )
-    }
-
+            </List>
+        );
+    } 
 
     return(
         <AppBar>
@@ -83,7 +68,14 @@ export const NavbarComponent: React.FC = () => {
                 onClose={toggleDrawer(anchor, false)}
                 onOpen={toggleDrawer(anchor, true)}
             >
-                {generateLinks(data.members)}
+                <div
+                    className={classes.list}
+                    role="presentation"
+                    //onClick={toggleDrawer(anchor, false)}
+                    onKeyDown={toggleDrawer(anchor, false)}
+                >
+                    {generateMemberList(data.generations)}
+                </div>
             </SwipeableDrawer>
         </AppBar>
     );

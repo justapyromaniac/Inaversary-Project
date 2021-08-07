@@ -4,7 +4,7 @@ import * as data  from './assets/Resources.json'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { MembersPageComponent } from './components/MemberPage';
 import { nanoid } from 'nanoid';
-import { Member } from './services/VariableStore';
+import { Generation } from './services/VariableStore';
 import { makeStyles, Container, CssBaseline} from '@material-ui/core';
 import { NavbarComponent } from './components/Navbar.component';
 
@@ -35,13 +35,15 @@ const useStyles = makeStyles((theme) => ({
 const App: React.FC = () => {
   const classes = useStyles();
 
-  const generateRoutes = (members: Member[]) => {
+  const generateRoutes = (generations: Generation[]) => {
     return(
       <Switch>
         {
-          members.map(member => {
-            console.log(member.name)
-            return <Route key={nanoid()} exact path={`/${member.name}`} render={() => <MembersPageComponent/>}/>
+          generations.map(generation => {
+            return generation.members.map(member => {
+              console.log(member.name)
+              return <Route key={nanoid()} exact path={`/${member.name}`} render={() => <MembersPageComponent/>}/>
+            })
           })
         }
       </Switch>
@@ -57,7 +59,7 @@ const App: React.FC = () => {
         <main className={classes.content}>
           <div className={classes.appBarSpacer}/>
           <Container className={classes.container} disableGutters={true} maxWidth={false}>
-            {generateRoutes(data.members)}
+            {generateRoutes(data.generations)}
           </Container>
         </main>
       </div>

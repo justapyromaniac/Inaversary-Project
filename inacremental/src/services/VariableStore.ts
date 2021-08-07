@@ -11,9 +11,15 @@ export interface Resource {
     resourceName: string,
     generationType: string
 }
+
 export interface Member {
     name: string,
     resources: Resource[],
+}
+
+export interface Generation {
+    generationName: string,
+    members: Member[]
 }
 class VariableStore {
 
@@ -35,7 +41,7 @@ class VariableStore {
         this.Variables = {};
         this.Observers = [];
         this.CountersList = undefined;
-        this.CurrentMember = data.members[0];
+        this.CurrentMember = data.generations[10].members[0];
     }
 
     //The only way to actually get the class, to ensure noone can change the instance somehow
@@ -112,7 +118,7 @@ class VariableStore {
     }
 
     notifyCountersList(): void {
-        if(this.CountersList !== undefined) {
+        if(this.CountersList !== undefined && this.CurrentMember !== undefined) {
             this.CountersList(this.Variables[this.CurrentMember.name as keyof Object]);
         }
     }
