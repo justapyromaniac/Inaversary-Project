@@ -2,8 +2,9 @@ import { Button, Typography, Divider, ListItem, ListItemText, makeStyles, Collap
 import { nanoid } from "nanoid";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import VariableStore, { Generation, Member } from "../services/VariableStore";
+import VariableStore, { Generation } from "../services/VariableStore";
 import { ExpandLess, ExpandMore } from '@material-ui/icons'
+import { Member } from "../services/Member";
 
 type toggleDrawer = (anchor: string, open: boolean) => (event: any) => void
 
