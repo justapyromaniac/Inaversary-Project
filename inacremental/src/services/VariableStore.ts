@@ -1,22 +1,12 @@
 import _ from "lodash";
 import * as data  from '../assets/Resources.json'
+import { Member } from "./Member";
 
 //a singleton class that will contain all global variables for resources in the game
 //call getInstance() and use one of the methods to increase or decrease the resource dynamically 
 
 export type UpdateObserver = (resourceName: string, resourceValue: number) => void;
 export type UpdateCountersList = (resources: Object) => void;
-
-export interface Resource {
-    resourceName: string,
-    generationType: string
-}
-
-export interface Member {
-    name: string,
-    resources: Resource[],
-}
-
 export interface Generation {
     generationName: string,
     members: Member[]
@@ -85,13 +75,14 @@ class VariableStore {
     }
 
     //increase the resource count
-    public addResource(member: string, keyName: string, value: number): void {
+    public increaseMemberResource(member: string, value: number): void {
         //check if the resource actually exists before increasing it, otherwise you'll get an error
+        let keyName = this.CurrentMember.generators[0].resourceName;
         const memberEntryExists = _.includes(Object.keys(this.Variables), member)
         const resourceEntryExists = this.Variables[member as keyof Object] !== undefined && (keyName in this.Variables[member as keyof Object])
         if(!resourceEntryExists || !memberEntryExists) {
             this.createNewEntry(member, keyName, value);
-        } else {
+        } else {        
             Object.entries(this.Variables[member as keyof Object]).forEach(key => {
                 if(key[0] === keyName) {
                     key[1] = key[1] + value;
@@ -101,6 +92,7 @@ class VariableStore {
                         writable: true,
                         enumerable: true,
                     })
+
                     Object.assign(this.Variables[member as keyof Object], temp)
                     this.notifyCountersList();
                     this.notifyObservers(keyName, key[1]);
@@ -108,7 +100,7 @@ class VariableStore {
             });
         }
     }
-    
+
     registerCountersList(CountersList: UpdateCountersList): void {
         this.CountersList = CountersList;
     }

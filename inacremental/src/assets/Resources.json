@@ -5,8 +5,9 @@
             "members": [
                 {
                     "name": "Tokino Sora (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Soratomo 🐻",
                             "generationType": "active"
                         }
@@ -14,8 +15,9 @@
                 },
                 {
                     "name": "Roboco (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Robosa 🤖",
                             "generationType": "active"
                         }
@@ -23,8 +25,9 @@
                 },
                 {
                     "name": "Sakura Miko (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Mikopi 🌸",
                             "generationType": "active"
                         }
@@ -32,8 +35,9 @@
                 },
                 {
                     "name": "Hishomachi Suisei (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Hoshiyomi ☄️",
                             "generationType": "active"
                         }
@@ -41,8 +45,9 @@
                 },
                 {
                     "name": "AZKi (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Pioneers ⚒️",
                             "generationType": "active"
                         }
@@ -55,8 +60,9 @@
             "members": [
                 {
                     "name": "AZKi (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Pioneers ⚒️",
                             "generationType": "active"
                         }
@@ -69,8 +75,9 @@
             "members": [
                 {
                     "name": "Yozora Mel (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Kapu-min 🌟",
                             "generationType": "active"
                         }
@@ -78,8 +85,9 @@
                 },
                 {
                     "name": "Aki Rosenthal (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Rose-tai 🍎",
                             "generationType": "active"
                         }
@@ -87,8 +95,9 @@
                 },
                 {
                     "name": "Natsuiro Matsuri (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Matsurisu 🏮",
                             "generationType": "active"
                         }
@@ -96,8 +105,9 @@
                 },
                 {
                     "name": "Shirakami Fubuki (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Sukon-bu 🌽",
                             "generationType": "active"
                         }
@@ -105,8 +115,9 @@
                 },
                 {
                     "name": "Akai Haato (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Haaton ❣️",
                             "generationType": "active"
                         }
@@ -119,8 +130,9 @@
             "members": [
                 {
                     "name": "Minato Aqua (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Aqua crew ⚓️",
                             "generationType": "active"
                         }
@@ -128,8 +140,9 @@
                 },
                 {
                     "name": "Murasaki Shion (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Shiokko 🌙",
                             "generationType": "active"
                         }
@@ -137,8 +150,9 @@
                 },
                 {
                     "name": "Nakiri Ayame (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Nakiri-gumi 👿",
                             "generationType": "active"
                         }
@@ -146,8 +160,9 @@
                 },
                 {
                     "name": "Yuzuki Choco (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Choco mate 🍫💋",
                             "generationType": "active"
                         }
@@ -155,8 +170,9 @@
                 },
                 {
                     "name": "Oozora Subaru (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Suba-tomo 🚑",
                             "generationType": "active"
                         }
@@ -169,8 +185,9 @@
             "members": [
                 {
                     "name": "Shirakami Fubuki (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Sukon-bu 🌽",
                             "generationType": "active"
                         }
@@ -178,8 +195,9 @@
                 },
                 {
                     "name": "Ookami Mio (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Mio-fa 🌲",
                             "generationType": "active"
                         }
@@ -187,8 +205,9 @@
                 },
                 {
                     "name": "Nekomata Okayu (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Onigiryaa 🍙",
                             "generationType": "active"
                         }
@@ -196,8 +215,9 @@
                 },
                 {
                     "name": "Inugami Korone (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Koronesuki 🥐",
                             "generationType": "active"
                         }
@@ -210,8 +230,9 @@
             "members": [
                 {
                     "name": "Usada Pekora (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Nousagi ⚓️",
                             "generationType": "active"
                         }
@@ -219,8 +240,9 @@
                 },
                 {
                     "name": "Uruha Rushia (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Fandeddo 🦋",
                             "generationType": "active"
                         }
@@ -228,8 +250,9 @@
                 },
                 {
                     "name": "Shiranui Flare (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Elfriend 🔥",
                             "generationType": "active"
                         }
@@ -237,8 +260,9 @@
                 },
                 {
                     "name": "Shirogane Noel (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Shirogane kishi-dan ⚔️",
                             "generationType": "active"
                         }
@@ -246,8 +270,9 @@
                 },
                 {
                     "name": "Houshou Marine (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Houshou no Ichimi 🏴‍☠️",
                             "generationType": "active"
                         }
@@ -260,8 +285,9 @@
             "members": [
                 {
                     "name": "Tsunomaki Watame (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Wata-mates 🐏",
                             "generationType": "active"
                         }
@@ -269,8 +295,9 @@
                 },
                 {
                     "name": "Tokoyami Towa (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Tokoyami Kenzoku 👾",
                             "generationType": "active"
                         }
@@ -278,8 +305,9 @@
                 },
                 {
                     "name": "Amane Kanata (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Heimin 💫",
                             "generationType": "active"
                         }
@@ -287,8 +315,9 @@
                 },
                 {
                     "name": "Himemori Luna (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Lu-knight 🍬",
                             "generationType": "active"
                         }
@@ -301,8 +330,9 @@
             "members": [
                 {
                     "name": "Yukihana Lamy (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Yuki-min ☃️",
                             "generationType": "active"
                         }
@@ -310,8 +340,9 @@
                 },
                 {
                     "name": "Momosuzu Nene (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Nekko 🥟",
                             "generationType": "active"
                         }
@@ -319,8 +350,9 @@
                 },
                 {
                     "name": "Shishiro Botan (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "SSRB ♌",
                             "generationType": "active"
                         }
@@ -328,8 +360,9 @@
                 },
                 {
                     "name": "Omaru Polka (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Omaruza 🎪",
                             "generationType": "active"
                         }
@@ -342,8 +375,9 @@
             "members": [
                 {
                     "name": "Airani Iofifteen (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "IOFORIA 🎨",
                             "generationType": "active"
                         }
@@ -351,8 +385,9 @@
                 },
                 {
                     "name": "Moona Hoshinova (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Moonafic 🔮",
                             "generationType": "active"
                         }
@@ -360,8 +395,9 @@
                 },
                 {
                     "name": "Ayunda Risu (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Risuners 🐿️",
                             "generationType": "active"
                         }
@@ -374,8 +410,9 @@
             "members": [
                 {
                     "name": "Kureiji Ollie (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Zomrades 🧟‍♀️",
                             "generationType": "active"
                         }
@@ -383,8 +420,9 @@
                 },
                 {
                     "name": "Anya Melfissa (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Melfriends 🍂",
                             "generationType": "active"
                         }
@@ -392,8 +430,9 @@
                 },
                 {
                     "name": "Pavolia Reine (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "MERAKyats 🦚",
                             "generationType": "active"
                         }
@@ -406,17 +445,26 @@
             "members": [
                 {
                     "name": "Ninomae Ina'nis",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Takodachi 🐙",
                             "generationType": "active"
+                        },
+                        {
+                            "generatorName": "generator 2",
+                            "resourceName": "Takodachi 🐙",
+                            "generationType": "passive",
+                            "generatorCooldown": 2,
+                            "generatorValue": 1
                         }
                     ]
                 },
                 {
                     "name": "Takanashi Kiara (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Kiara Fan Club 🐔",
                             "generationType": "active"
                         }
@@ -424,8 +472,9 @@
                 },
                 {
                     "name": "Watson Amelia (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Teamates 🔎",
                             "generationType": "active"
                         }
@@ -433,8 +482,9 @@
                 },
                 {
                     "name": "Mori Calliope (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Dead Beats 💀",
                             "generationType": "active"
                         }
@@ -442,8 +492,9 @@
                 },
                 {
                     "name": "Gawr Gura (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Chumbuds 🔱",
                             "generationType": "active"
                         }
@@ -456,8 +507,9 @@
             "members": [
                 {
                     "name": "IRyS (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "IRyStocrats 💎",
                             "generationType": "active"
                         }
@@ -470,8 +522,9 @@
             "members": [
                 {
                 "name": "Hanasaki Miyabi (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Hanami-gumi 🌺",
                             "generationType": "active"
                         }
@@ -479,8 +532,9 @@
                 },
                 {
                     "name": "Kanade Izuru (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Nothing gang 🎸",
                             "generationType": "active"
                         }
@@ -488,8 +542,9 @@
                 },
                 {
                     "name": "Arurandeisu (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Familiaran 🍕",
                             "generationType": "active"
                         }
@@ -497,8 +552,9 @@
                 },
                 {
                     "name": "Rikka (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Tuner ⚙️",
                             "generationType": "active"
                         }
@@ -511,8 +567,9 @@
             "members": [
                 {
                     "name": "Astel Leda (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Astellas 🎭",
                             "generationType": "active"
                         }
@@ -520,8 +577,9 @@
                 },
                 {
                     "name": "Kishido Temma (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Kishi-men 🦔💨",
                             "generationType": "active"
                         }
@@ -529,8 +587,9 @@
                 },
                 {
                     "name": "Yukoku Roberu (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Regulars 🍷",
                             "generationType": "active"
                         }
@@ -543,8 +602,9 @@
             "members": [
                 {
                     "name": "Kageyama Shien (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "Shiengumi 🟣",
                             "generationType": "active"
                         }
@@ -552,8 +612,9 @@
                 },
                 {
                     "name": "Aragami Oga (Coming soon!)",
-                    "resources": [
+                    "generators": [
                         {
+                            "generatorName": "generator 1",
                             "resourceName": "OMAEsan 🐃",
                             "generationType": "active"
                         }

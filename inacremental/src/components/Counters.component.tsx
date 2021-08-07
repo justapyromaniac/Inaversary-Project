@@ -19,6 +19,7 @@ export const CounterListComponent: React.FC = () => {
         if(VariableStore.getVariables[currentMember.name as keyof Object] !== undefined) {
             setCounters(VariableStore.getVariables[currentMember.name as keyof Object])
         }
+        
         return () => VariableStore.removeCountersList();
     }, [currentMember.name])
 

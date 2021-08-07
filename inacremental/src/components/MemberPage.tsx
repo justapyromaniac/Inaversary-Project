@@ -1,9 +1,11 @@
 import { Grid, makeStyles, Typography } from '@material-ui/core';
 import _ from 'lodash';
 import VariableStore from '../services/VariableStore';
+import { Generator, PassiveGenerator } from '../services/Generator';
 import { CounterListComponent } from './Counters.component';
 import { IncrementButtonComponent } from './IncrementButton.component';
 import {nanoid} from 'nanoid'
+import {PassiveGeneratorComponent} from './PassiveGenerator.component';
 
 const useStyles = makeStyles((theme) => ({
     gridContainer: {
@@ -21,9 +23,19 @@ export const MembersPageComponent: React.FC = () => {
     const currentMember = VariableStore.CurrentMember;
 
     const generateActiveGenerators = () => {
-        return currentMember.resources.map(resource => {
-            if(_.isEqual(resource.generationType, "active")) {
-                return <IncrementButtonComponent key={nanoid()} {...resource}/>
+        return currentMember.generators.map(generator => {
+            if(_.isEqual(generator.generationType, "active")) {
+                return <IncrementButtonComponent key={nanoid()} {...generator}/>
+            } else {
+                return null;
+            }
+        })
+    }
+
+    const generatePassiveGenerator = () => {
+        return currentMember.generators.map(generator => {
+            if(_.isEqual(generator.generationType, "passive")) {
+                return <PassiveGeneratorComponent key={nanoid()} {...generator as PassiveGenerator}/>
             } else {
                 return null;
             }
@@ -40,6 +52,8 @@ export const MembersPageComponent: React.FC = () => {
             </Grid>
             <Grid item xs={4} className={classes.gridItem}>
                 <Typography>Idle generators (Coming soon!)</Typography>
+                <br/>
+                {generatePassiveGenerator()}
             </Grid>
             <Grid item xs={4} className={classes.gridItem}>
             <Typography>Upgrades (Coming soon!)</Typography>
