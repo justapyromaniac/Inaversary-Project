@@ -17,6 +17,13 @@ const useStyles = makeStyles((theme) => ({
     button: {
         width: '100%',
         justifyContent: 'space-between',
+        paddingLeft: theme.spacing(2),
+        paddingTop: theme.spacing(2),
+    },
+    divider: {
+        borderTop: `thin solid ${theme.palette.divider}`,
+        backgroundColor: undefined,
+        height: undefined,
     }
 }))
 
@@ -67,7 +74,7 @@ export const GenerationListItem: React.FC<GenerationListItemProps> = ({generatio
 
     return(
         <div>
-            <Divider/>
+            <Divider className={classes.divider}/>
             <li>
                 <Typography
                     display='block'

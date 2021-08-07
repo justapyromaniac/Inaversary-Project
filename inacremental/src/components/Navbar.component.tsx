@@ -15,7 +15,7 @@ import {
 const useStyles = makeStyles((theme) => ({
     list: {
         width: 340,
-        padding: theme.spacing(2),
+        
         overflowX: 'hidden',
     },
     fullList: {
