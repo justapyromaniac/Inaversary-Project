@@ -57,7 +57,7 @@
                         }
                     ],
                     "upgrades": []
-                }
+                }            
             ]
         },
         {
@@ -135,7 +135,7 @@
                     "upgrades": []
                 }
             ]
-        },
+        }, 
         {
             "generationName": "hololive 2nd gen",
             "members": [
@@ -244,7 +244,7 @@
                     "upgrades": []
                 }
             ]
-        },
+        }, 
         {
             "generationName": "hololive 3rd gen",
             "members": [
@@ -440,7 +440,7 @@
                     "upgrades": []
                 }
             ]
-        },
+        }, 
         {
             "generationName": "holoID 2nd gen",
             "members": [
@@ -518,7 +518,7 @@
                     ]
                 },
                 {
-                    "name": "Takanashi Kiara",
+                    "name": "Takanashi Kiara (Coming soon!)",
                     "generators": [
                         {
                             "generatorName": "generator 1",
@@ -526,16 +526,15 @@
                             "generationType": "active"
                         }
                     ],
-                    "upgrades": [
-                        {
-                            "name": "Test Upgrade",
-                            "type": "active",
-                            "purchasePrice": 20,
-                            "purchaseResourceName": "Kiara Fan Club 🐔",
-                            "generatorName": "kotori",
-                            "valueMultiplier": 3.0
-                        }
-                    ]
+                    "upgrades": [                        {
+                        "name": "Test Upgrade",
+                        "type": "active",
+                        "purchasePrice": 20,
+                        "purchaseResourceName": "Kiara Fan Club 🐔",
+                        "generatorName": "kotori",
+                        "valueMultiplier": 3.0
+                    }
+                ]
                 },
                 {
                     "name": "Watson Amelia (Coming soon!)",
@@ -571,7 +570,7 @@
                     "upgrades": []
                 }
             ]
-        },
+        }, 
         {
             "generationName": "Project: HOPE",
             "members": [
@@ -592,8 +591,8 @@
             "generationName": "holostars 1st gen",
             "members": [
                 {
-                    "generators": [
                 "name": "Hanasaki Miyabi (Coming soon!)",
+                    "generators": [
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Hanami-gumi 🌺",

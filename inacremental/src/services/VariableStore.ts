@@ -1,18 +1,19 @@
 import _ from "lodash";
 import * as data from '../assets/Resources.json'
 import { Upgrade } from './Upgrade'
-import * as data  from '../assets/Resources.json'
-import { Member } from "./Member";
+import {Member} from './Member'
 
 //a singleton class that will contain all global variables for resources in the game
 //call getInstance() and use one of the methods to increase or decrease the resource dynamically 
 
 export type UpdateObserver = (resourceName: string, resourceValue: number) => void;
 export type UpdateCountersList = (resources: Object) => void;
+
 export interface Generation {
     generationName: string,
     members: Member[]
 }
+
 class VariableStore {
 
     //the actual store of variables
@@ -84,7 +85,7 @@ class VariableStore {
         const resourceEntryExists = this.Variables[member as keyof Object] !== undefined && (keyName in this.Variables[member as keyof Object])
         if (!resourceEntryExists || !memberEntryExists) {
             this.createNewEntry(member, keyName, value);
-        } else {        
+        } else {
             Object.entries(this.Variables[member as keyof Object]).forEach(key => {
                 if (key[0] === keyName) {
                     key[1] = key[1] + value;
