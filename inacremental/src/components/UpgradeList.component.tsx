@@ -1,8 +1,8 @@
-import { UpgradeVariable } from "../services/VariableStore";
+import { Upgrade } from "../services/Upgrade";
 import UpgradeComponent from "./Upgrade.component";
 
 interface UpgradeListProps {
-    upgrades: UpgradeVariable[];
+    upgrades: Upgrade[];
 }
 
 const UpgradeListComponent: React.FC<UpgradeListProps> = ({ upgrades }) => {
