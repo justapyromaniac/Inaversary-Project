@@ -1,7 +1,7 @@
-import { ActiveGeneratorUpgrade } from "../services/Upgrade";
+import { Upgrade } from "../services/Upgrade";
 
 interface ActiveGeneratorUpgradeProps {
-  upgrade: ActiveGeneratorUpgrade;
+  upgrade: Upgrade;
 }
 
 const ActiveGeneratorUpgradeComponent: React.FC<ActiveGeneratorUpgradeProps> =

@@ -2,6 +2,10 @@ import _ from "lodash";
 import * as data from '../assets/Resources.json'
 import { Upgrade } from './Upgrade'
 import {Member} from './Member'
+import GeneratorService from './GeneratorService'
+import ActiveGeneratorService from "./ActiveGeneratorService";
+import PassiveGeneratorService from "./PassiveGeneratorService";
+import { PassiveGenerator } from "./Generator";
 
 //a singleton class that will contain all global variables for resources in the game
 //call getInstance() and use one of the methods to increase or decrease the resource dynamically 
@@ -23,6 +27,8 @@ class VariableStore {
 
     private CountersList: UpdateCountersList | undefined;
 
+    private GeneratorServiceList: GeneratorService[];
+
     public CurrentMember!: Member;
 
     //the only instance of this class ever
@@ -33,8 +39,28 @@ class VariableStore {
     private constructor() {
         this.Variables = {};
         this.Observers = [];
+        this.GeneratorServiceList = [];
         this.CountersList = undefined;
-        this.CurrentMember = data.generations[10].members[0];
+        this.CurrentMember = data.generations[10].members[0];    
+        this.generateServiceList();    
+    }
+
+    private generateServiceList(){
+        this.CurrentMember.generators.forEach(x=>{
+            let tempt: GeneratorService;
+            let temp2: PassiveGenerator;
+
+            if(x.generationType === 'active'){
+                tempt = new ActiveGeneratorService(x.generatorName);
+            }else{
+                temp2 = x as PassiveGenerator;
+                tempt = new PassiveGeneratorService(x.generatorName, temp2.generatorValue, temp2.generatorCooldown);
+            }
+
+            this.GeneratorServiceList.push(tempt);
+        });
+
+        console.log(this.GeneratorServiceList);
     }
 
     //The only way to actually get the class, to ensure noone can change the instance somehow
@@ -48,6 +74,13 @@ class VariableStore {
 
     get getVariables(): Object {
         return this.Variables;
+    }
+
+    // returns the GeneratorService with the matching GeneratorName
+    public getGeneratorService(generatorName: string): GeneratorService {
+        let g = this.GeneratorServiceList.find( x => x.getGeneratorName() === generatorName);
+        console.log(g);
+        return g;
     }
 
     //if the resource isn't registered, register it

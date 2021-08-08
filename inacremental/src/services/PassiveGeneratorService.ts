@@ -12,4 +12,8 @@ export default class PassiveResourceGenerator extends GeneratorService {
     public handleTimerEvent(): void {
         super.increment()
     }
+
+    public purchaseUpgrade(upgradeMultiplier: number): void{
+        super.purchaseUpgrade(upgradeMultiplier);
+    }
 }

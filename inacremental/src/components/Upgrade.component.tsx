@@ -1,8 +1,9 @@
+import { SubscriptionsOutlined } from "@material-ui/icons";
 import { useState } from "react";
-import {
-    ActiveGeneratorUpgrade,
-    Upgrade
-} from "../services/Upgrade";
+import ActiveGeneratorService from "../services/ActiveGeneratorService";
+import PassiveGeneratorService from "../services/PassiveGeneratorService";
+import {Upgrade} from "../services/Upgrade";
+import VariableStore from "../services/VariableStore";
 import ActiveGeneratorUpgradeComponent from "./ActiveGeneratorUpgrade.component";
 
 interface UpgradeProps {
@@ -12,13 +13,18 @@ interface UpgradeProps {
 const UpgradeComponent: React.FC<UpgradeProps> = ({ upgrade }) => {
     // TODO: have purchase functionality actually do something
     const [purchased, setPurchased] = useState(false)
+    const generator = VariableStore.getGeneratorService(upgrade.generatorName);
+
+    const purchaseUpgrade = () => {
+        generator.purchaseUpgrade(upgrade.valueMultiplier);
+    }
 
     return (
         <div>
             {upgrade.name}
             {upgrade.type === "active" && (
                 <ActiveGeneratorUpgradeComponent
-                    upgrade={upgrade as ActiveGeneratorUpgrade}
+                    upgrade={upgrade}
                 />
             )}
             {purchased ? (
@@ -28,7 +34,7 @@ const UpgradeComponent: React.FC<UpgradeProps> = ({ upgrade }) => {
                     <div>
                         Cost: {upgrade.purchasePrice} {upgrade.purchaseResourceName}
                     </div>
-                    <button onClick={() => setPurchased(true)}>Purchase</button>
+                    <button onClick={purchaseUpgrade}>Purchase</button>
                 </>
             )}
         </div>

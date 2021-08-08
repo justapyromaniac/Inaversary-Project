@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
-import PassiveResourceGenerator from "../services/PassiveGeneratorService";
+import PassiveGeneratorService from "../services/PassiveGeneratorService";
 import { PassiveGenerator } from "../services/Generator";
+import VariableStore from "../services/VariableStore";
 
 export const PassiveGeneratorComponent: React.FC<PassiveGenerator> = (resource: PassiveGenerator) => {
     const [seconds, setSeconds] = useState(0);
     const [isActive, setActive] = useState(false);
-    const generator = new PassiveResourceGenerator(resource.generatorName, resource.generatorValue, resource.generatorCooldown);
+    const generator = VariableStore.getGeneratorService(resource.generatorName) as PassiveGeneratorService;
 
     const handleTimerEvent = () => {
         if(seconds > 0 && seconds % resource.generatorCooldown === 0){
             generator.handleTimerEvent();
+            console.log(generator);
         }
     }
 
