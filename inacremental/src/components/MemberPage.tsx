@@ -43,10 +43,8 @@ export const MembersPageComponent: React.FC = () => {
                 <Typography>Idle generators (Coming soon!)</Typography>
             </Grid>
             <Grid item xs={4} className={classes.gridItem}>
-            <Grid item xs={4} className={classes.gridItem}>
                 <Typography>Upgrades</Typography>
                 <UpgradeListComponent upgrades={currentMember.upgrades} />
-            </Grid>
             </Grid>
         </Grid>
     );

@@ -1,23 +1,12 @@
 import _ from "lodash";
-import * as data  from '../assets/Resources.json'
+import * as data from '../assets/Resources.json'
+import { Upgrade } from './Upgrade'
 
 //a singleton class that will contain all global variables for resources in the game
 //call getInstance() and use one of the methods to increase or decrease the resource dynamically 
 
 export type UpdateObserver = (resourceName: string, resourceValue: number) => void;
 export type UpdateCountersList = (resources: Object) => void;
-
-export interface ActiveGeneratorUpgradeVariable extends UpgradeVariable {
-    generatorName: string;
-    valueMultiplier: number;
-}
-
-export interface UpgradeVariable {
-    name: string,
-    type: string,
-    purchasePrice: number,
-    purchaseResourceName: string
-}
 
 export interface Resource {
     resourceName: string,
@@ -27,7 +16,7 @@ export interface Resource {
 export interface Member {
     name: string,
     resources: Resource[],
-    upgrades: UpgradeVariable[],
+    upgrades: Upgrade[],
 }
 
 export interface Generation {
@@ -59,7 +48,7 @@ class VariableStore {
 
     //The only way to actually get the class, to ensure noone can change the instance somehow
     public static get getInstance(): VariableStore {
-        if(this._instance === undefined) {
+        if (this._instance === undefined) {
             this._instance = new VariableStore();
         }
 
@@ -76,7 +65,7 @@ class VariableStore {
     private createNewEntry(member: string, keyName: string, value: number): void {
         //paranoid programming as I call it: if something shouldn't happen, even if it logically cannot, make sure it won't!
         //better safe than sorry
-        if(!(member in this.Variables)){
+        if (!(member in this.Variables)) {
             Object.defineProperty(this.Variables, member, {
                 value: {},
                 writable: false,
@@ -85,8 +74,8 @@ class VariableStore {
             this.notifyCountersList();
             this.notifyObservers(keyName, value);
         }
-        
-        if(!(keyName in this.Variables)) {
+
+        if (!(keyName in this.Variables)) {
             Object.defineProperty(this.Variables[member as keyof Object], keyName, {
                 value: value,
                 writable: true,
@@ -94,7 +83,7 @@ class VariableStore {
             });
             this.notifyCountersList();
             this.notifyObservers(keyName, value);
-        } 
+        }
     }
 
     //increase the resource count
@@ -102,11 +91,11 @@ class VariableStore {
         //check if the resource actually exists before increasing it, otherwise you'll get an error
         const memberEntryExists = _.includes(Object.keys(this.Variables), member)
         const resourceEntryExists = this.Variables[member as keyof Object] !== undefined && (keyName in this.Variables[member as keyof Object])
-        if(!resourceEntryExists || !memberEntryExists) {
+        if (!resourceEntryExists || !memberEntryExists) {
             this.createNewEntry(member, keyName, value);
         } else {
             Object.entries(this.Variables[member as keyof Object]).forEach(key => {
-                if(key[0] === keyName) {
+                if (key[0] === keyName) {
                     key[1] = key[1] + value;
                     let temp = {};
                     Object.defineProperty(temp, key[0], {
@@ -121,7 +110,7 @@ class VariableStore {
             });
         }
     }
-    
+
     registerCountersList(CountersList: UpdateCountersList): void {
         this.CountersList = CountersList;
     }
@@ -131,7 +120,7 @@ class VariableStore {
     }
 
     notifyCountersList(): void {
-        if(this.CountersList !== undefined && this.CurrentMember !== undefined) {
+        if (this.CountersList !== undefined && this.CurrentMember !== undefined) {
             this.CountersList(this.Variables[this.CurrentMember.name as keyof Object]);
         }
     }

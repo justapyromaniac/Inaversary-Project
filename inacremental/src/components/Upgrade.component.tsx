@@ -1,32 +1,35 @@
+import { useState } from "react";
 import {
-    ActiveGeneratorUpgradeVariable,
-    UpgradeVariable,
-} from "../services/VariableStore";
+    ActiveGeneratorUpgrade,
+    Upgrade
+} from "../services/Upgrade";
 import ActiveGeneratorUpgradeComponent from "./ActiveGeneratorUpgrade.component";
 
 interface UpgradeProps {
-    upgrade: UpgradeVariable;
+    upgrade: Upgrade;
 }
 
 const UpgradeComponent: React.FC<UpgradeProps> = ({ upgrade }) => {
+    // TODO: have purchase functionality actually do something
+    const [purchased, setPurchased] = useState(false)
+
     return (
         <div>
             {upgrade.name}
             {upgrade.type === "active" && (
                 <ActiveGeneratorUpgradeComponent
-                    upgrade={upgrade as ActiveGeneratorUpgradeVariable}
+                    upgrade={upgrade as ActiveGeneratorUpgrade}
                 />
             )}
-            {true ? (
+            {purchased ? (
+                <button disabled={true}>Purchased</button>
+            ) : (
                 <>
                     <div>
-                        Cost: {upgrade.purchasePrice}{" "}
-                        {upgrade.purchaseResourceName}
+                        Cost: {upgrade.purchasePrice} {upgrade.purchaseResourceName}
                     </div>
-                    <button>Purchase</button>
+                    <button onClick={() => setPurchased(true)}>Purchase</button>
                 </>
-            ) : (
-                <button disabled={true}>Purchased</button>
             )}
         </div>
     );

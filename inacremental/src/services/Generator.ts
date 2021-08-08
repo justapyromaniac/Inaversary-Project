@@ -1,7 +1,7 @@
 import VariableStore from "./VariableStore";
 
 //abstract class for resource generators, will contain all shared upgrade variables and general incrementing logic
-abstract class Generator  {
+abstract class Generator {
     private resourceName: string;
     private generationValue: number;
 

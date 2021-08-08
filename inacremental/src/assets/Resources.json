@@ -10,7 +10,8 @@
                             "resourceName": "Soratomo 🐻",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Roboco (Coming soon!)",
@@ -19,7 +20,8 @@
                             "resourceName": "Robosa 🤖",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Sakura Miko (Coming soon!)",
@@ -28,7 +30,8 @@
                             "resourceName": "Mikopi 🌸",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Hishomachi Suisei (Coming soon!)",
@@ -37,7 +40,8 @@
                             "resourceName": "Hoshiyomi ☄️",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "AZKi (Coming soon!)",
@@ -46,8 +50,9 @@
                             "resourceName": "Pioneers ⚒️",
                             "generationType": "active"
                         }
-                    ]
-                }            
+                    ],
+                    "upgrades": []
+                }
             ]
         },
         {
@@ -60,7 +65,8 @@
                             "resourceName": "Pioneers ⚒️",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
             ]
         },
@@ -74,7 +80,8 @@
                             "resourceName": "Kapu-min 🌟",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Aki Rosenthal (Coming soon!)",
@@ -83,7 +90,8 @@
                             "resourceName": "Rose-tai 🍎",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Natsuiro Matsuri (Coming soon!)",
@@ -92,7 +100,8 @@
                             "resourceName": "Matsurisu 🏮",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Shirakami Fubuki (Coming soon!)",
@@ -101,7 +110,8 @@
                             "resourceName": "Sukon-bu 🌽",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Akai Haato (Coming soon!)",
@@ -110,10 +120,11 @@
                             "resourceName": "Haaton ❣️",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
             ]
-        }, 
+        },
         {
             "generationName": "hololive 2nd gen",
             "members": [
@@ -124,7 +135,8 @@
                             "resourceName": "Aqua crew ⚓️",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Murasaki Shion (Coming soon!)",
@@ -133,7 +145,8 @@
                             "resourceName": "Shiokko 🌙",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Nakiri Ayame (Coming soon!)",
@@ -142,7 +155,8 @@
                             "resourceName": "Nakiri-gumi 👿",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Yuzuki Choco (Coming soon!)",
@@ -151,7 +165,8 @@
                             "resourceName": "Choco mate 🍫💋",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Oozora Subaru (Coming soon!)",
@@ -160,17 +175,8 @@
                             "resourceName": "Suba-tomo 🚑",
                             "generationType": "active"
                         }
-                    ]
-                }
-            ],
-            "upgrades": [
-                {
-                    "name": "Ancient One's Cookie Dough",
-                    "type": "active",
-                    "purchasePrice": 20,
-                    "purchaseResourceName": "Takodachi 🐙",
-                    "generatorName": "cookie",
-                    "valueMultiplier": 3.0
+                    ],
+                    "upgrades": []
                 }
             ]
         },
@@ -184,7 +190,8 @@
                             "resourceName": "Sukon-bu 🌽",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Ookami Mio (Coming soon!)",
@@ -193,7 +200,8 @@
                             "resourceName": "Mio-fa 🌲",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Nekomata Okayu (Coming soon!)",
@@ -202,7 +210,8 @@
                             "resourceName": "Onigiryaa 🍙",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Inugami Korone (Coming soon!)",
@@ -211,11 +220,11 @@
                             "resourceName": "Koronesuki 🥐",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
-            ],
-            "upgrades": []
-        }, 
+            ]
+        },
         {
             "generationName": "hololive 3rd gen",
             "members": [
@@ -226,7 +235,8 @@
                             "resourceName": "Nousagi ⚓️",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Uruha Rushia (Coming soon!)",
@@ -235,7 +245,8 @@
                             "resourceName": "Fandeddo 🦋",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Shiranui Flare (Coming soon!)",
@@ -244,7 +255,8 @@
                             "resourceName": "Elfriend 🔥",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Shirogane Noel (Coming soon!)",
@@ -253,7 +265,8 @@
                             "resourceName": "Shirogane kishi-dan ⚔️",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Houshou Marine (Coming soon!)",
@@ -262,7 +275,8 @@
                             "resourceName": "Houshou no Ichimi 🏴‍☠️",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
             ]
         },
@@ -276,7 +290,8 @@
                             "resourceName": "Wata-mates 🐏",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Tokoyami Towa (Coming soon!)",
@@ -285,7 +300,8 @@
                             "resourceName": "Tokoyami Kenzoku 👾",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Amane Kanata (Coming soon!)",
@@ -294,7 +310,8 @@
                             "resourceName": "Heimin 💫",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Himemori Luna (Coming soon!)",
@@ -303,7 +320,8 @@
                             "resourceName": "Lu-knight 🍬",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
             ]
         },
@@ -317,7 +335,8 @@
                             "resourceName": "Yuki-min ☃️",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Momosuzu Nene (Coming soon!)",
@@ -326,7 +345,8 @@
                             "resourceName": "Nekko 🥟",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Shishiro Botan (Coming soon!)",
@@ -335,7 +355,8 @@
                             "resourceName": "SSRB ♌",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Omaru Polka (Coming soon!)",
@@ -344,7 +365,8 @@
                             "resourceName": "Omaruza 🎪",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
             ]
         },
@@ -358,7 +380,8 @@
                             "resourceName": "IOFORIA 🎨",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Moona Hoshinova (Coming soon!)",
@@ -367,7 +390,8 @@
                             "resourceName": "Moonafic 🔮",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Ayunda Risu (Coming soon!)",
@@ -376,10 +400,11 @@
                             "resourceName": "Risuners 🐿️",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
             ]
-        }, 
+        },
         {
             "generationName": "holoID 2nd gen",
             "members": [
@@ -390,7 +415,8 @@
                             "resourceName": "Zomrades 🧟‍♀️",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Anya Melfissa (Coming soon!)",
@@ -399,7 +425,8 @@
                             "resourceName": "Melfriends 🍂",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Pavolia Reine (Coming soon!)",
@@ -408,7 +435,8 @@
                             "resourceName": "MERAKyats 🦚",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
             ]
         },
@@ -422,14 +450,42 @@
                             "resourceName": "Takodachi 🐙",
                             "generationType": "active"
                         }
+                    ],
+                    "upgrades": [
+                        {
+                            "name": "Ancient One's Cookie Dough",
+                            "type": "active",
+                            "purchasePrice": 20,
+                            "purchaseResourceName": "Takodachi 🐙",
+                            "generatorName": "cookie",
+                            "valueMultiplier": 3.0
+                        },
+                        {
+                            "name": "WAH",
+                            "type": "active",
+                            "purchasePrice": 100,
+                            "purchaseResourceName": "Takodachi 🐙",
+                            "generatorName": "cookie",
+                            "valueMultiplier": 100.0
+                        }
                     ]
                 },
                 {
-                    "name": "Takanashi Kiara (Coming soon!)",
+                    "name": "Takanashi Kiara",
                     "resources": [
                         {
                             "resourceName": "Kiara Fan Club 🐔",
                             "generationType": "active"
+                        }
+                    ],
+                    "upgrades": [
+                        {
+                            "name": "Test Upgrade",
+                            "type": "active",
+                            "purchasePrice": 20,
+                            "purchaseResourceName": "Kiara Fan Club 🐔",
+                            "generatorName": "kotori",
+                            "valueMultiplier": 3.0
                         }
                     ]
                 },
@@ -440,7 +496,8 @@
                             "resourceName": "Teamates 🔎",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Mori Calliope (Coming soon!)",
@@ -449,7 +506,8 @@
                             "resourceName": "Dead Beats 💀",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Gawr Gura (Coming soon!)",
@@ -458,10 +516,11 @@
                             "resourceName": "Chumbuds 🔱",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
             ]
-        }, 
+        },
         {
             "generationName": "Project: HOPE",
             "members": [
@@ -472,7 +531,8 @@
                             "resourceName": "IRyStocrats 💎",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
             ]
         },
@@ -480,13 +540,14 @@
             "generationName": "holostars 1st gen",
             "members": [
                 {
-                "name": "Hanasaki Miyabi (Coming soon!)",
+                    "name": "Hanasaki Miyabi (Coming soon!)",
                     "resources": [
                         {
                             "resourceName": "Hanami-gumi 🌺",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Kanade Izuru (Coming soon!)",
@@ -495,7 +556,8 @@
                             "resourceName": "Nothing gang 🎸",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Arurandeisu (Coming soon!)",
@@ -504,7 +566,8 @@
                             "resourceName": "Familiaran 🍕",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Rikka (Coming soon!)",
@@ -513,7 +576,8 @@
                             "resourceName": "Tuner ⚙️",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
             ]
         },
@@ -527,7 +591,8 @@
                             "resourceName": "Astellas 🎭",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Kishido Temma (Coming soon!)",
@@ -536,7 +601,8 @@
                             "resourceName": "Kishi-men 🦔💨",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Yukoku Roberu (Coming soon!)",
@@ -545,7 +611,8 @@
                             "resourceName": "Regulars 🍷",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
             ]
         },
@@ -559,7 +626,8 @@
                             "resourceName": "Shiengumi 🟣",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 },
                 {
                     "name": "Aragami Oga (Coming soon!)",
@@ -568,10 +636,10 @@
                             "resourceName": "OMAEsan 🐃",
                             "generationType": "active"
                         }
-                    ]
+                    ],
+                    "upgrades": []
                 }
-            ],
-            "upgrades": []
+            ]
         }
     ]
 }
