@@ -45,19 +45,20 @@ class VariableStore {
         this.generateServiceList();    
     }
 
+    // creates a list of all the generators
     private generateServiceList(){
         this.CurrentMember.generators.forEach(x=>{
-            let tempt: GeneratorService;
-            let temp2: PassiveGenerator;
+            let generatorService: GeneratorService;
+            let passiveGenerator: PassiveGenerator;
 
             if(x.generationType === 'active'){
-                tempt = new ActiveGeneratorService(x.generatorName);
+                generatorService = new ActiveGeneratorService(x.generatorName);
             }else{
-                temp2 = x as PassiveGenerator;
-                tempt = new PassiveGeneratorService(x.generatorName, temp2.generatorValue, temp2.generatorCooldown);
+                passiveGenerator = x as PassiveGenerator;
+                generatorService = new PassiveGeneratorService(passiveGenerator.generatorName, passiveGenerator.generatorValue, passiveGenerator.generatorCooldown);
             }
 
-            this.GeneratorServiceList.push(tempt);
+            this.GeneratorServiceList.push(generatorService);
         });
 
         console.log(this.GeneratorServiceList);
@@ -78,9 +79,7 @@ class VariableStore {
 
     // returns the GeneratorService with the matching GeneratorName
     public getGeneratorService(generatorName: string): GeneratorService {
-        let g = this.GeneratorServiceList.find( x => x.getGeneratorName() === generatorName);
-        console.log(g);
-        return g;
+        return this.GeneratorServiceList.find( x => x.getGeneratorName() === generatorName);
     }
 
     //if the resource isn't registered, register it

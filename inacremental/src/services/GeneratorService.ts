@@ -22,6 +22,15 @@ abstract class GeneratorService  {
         this.setUpgradeMultiplier(this.upgradeMultiplier * upgradeMultiplier);
     }
 
+    public purchaseGenerator(): void{
+        this.setGeneratorCount(this.generatorCount + 1);
+    }
+
+    public setGeneratorCount(generatorCount: number): void{
+        this.generatorCount = generatorCount;
+        console.log(generatorCount);
+    }
+
     public setUpgradeMultiplier(upgradeMultiplier: number): void{
         this.upgradeMultiplier = upgradeMultiplier;
     }

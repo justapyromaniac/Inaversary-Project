@@ -10,7 +10,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Soratomo 🐻",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -22,7 +23,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Robosa 🤖",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -34,7 +36,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Mikopi 🌸",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -46,7 +49,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Hoshiyomi ☄️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -58,7 +62,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Pioneers ⚒️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -75,7 +80,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Pioneers ⚒️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -92,7 +98,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Kapu-min 🌟",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -104,7 +111,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Rose-tai 🍎",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -116,7 +124,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Matsurisu 🏮",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -128,7 +137,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Sukon-bu 🌽",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -140,7 +150,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Haaton ❣️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -157,7 +168,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Aqua crew ⚓️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -169,7 +181,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Shiokko 🌙",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -181,7 +194,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Nakiri-gumi 👿",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -193,7 +207,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Choco mate 🍫💋",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -205,7 +220,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Suba-tomo 🚑",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -222,7 +238,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Sukon-bu 🌽",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -234,7 +251,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Mio-fa 🌲",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -246,7 +264,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Onigiryaa 🍙",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -258,7 +277,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Koronesuki 🥐",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -275,7 +295,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Nousagi ⚓️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -287,7 +308,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Fandeddo 🦋",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -299,7 +321,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Elfriend 🔥",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -311,7 +334,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Shirogane kishi-dan ⚔️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -323,7 +347,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Houshou no Ichimi 🏴‍☠️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -340,7 +365,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Wata-mates 🐏",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -352,7 +378,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Tokoyami Kenzoku 👾",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -364,7 +391,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Heimin 💫",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -376,7 +404,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Lu-knight 🍬",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -393,7 +422,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Yuki-min ☃️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -405,7 +435,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Nekko 🥟",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -417,7 +448,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "SSRB ♌",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -429,7 +461,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Omaruza 🎪",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -446,7 +479,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "IOFORIA 🎨",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -458,7 +492,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Moonafic 🔮",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -470,7 +505,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Risuners 🐿️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -487,7 +523,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Zomrades 🧟‍♀️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -499,7 +536,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Melfriends 🍂",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -511,7 +549,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "MERAKyats 🦚",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -528,13 +567,15 @@
                             "generatorName": "generator 1",
                             "resourceName": "Takodachi 🐙",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         },
                         {
                             "generatorName": "generator 2",
                             "resourceName": "Takodachi 🐙",
                             "generationType": "passive",
                             "generatorCount": 1,
+                            "generatorPrice": 10,
                             "generatorCooldown": 2,
                             "generatorValue": 1
                         }
@@ -573,7 +614,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Kiara Fan Club 🐔",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": [                        {
@@ -593,7 +635,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Teamates 🔎",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -605,7 +648,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Dead Beats 💀",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -617,7 +661,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Chumbuds 🔱",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -634,7 +679,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "IRyStocrats 💎",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -651,7 +697,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Hanami-gumi 🌺",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -663,7 +710,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Nothing gang 🎸",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -675,7 +723,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Familiaran 🍕",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -687,7 +736,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Tuner ⚙️",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -704,7 +754,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Astellas 🎭",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -716,7 +767,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Kishi-men 🦔💨",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -728,7 +780,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Regulars 🍷",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -745,7 +798,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "Shiengumi 🟣",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []
@@ -757,7 +811,8 @@
                             "generatorName": "generator 1",
                             "resourceName": "OMAEsan 🐃",
                             "generationType": "active",
-                            "generatorCount": 1
+                            "generatorCount": 1,
+                            "generatorPrice": 10
                         }
                     ],
                     "upgrades": []

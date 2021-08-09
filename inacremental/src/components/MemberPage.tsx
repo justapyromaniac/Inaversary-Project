@@ -7,6 +7,7 @@ import { IncrementButtonComponent } from './IncrementButton.component';
 import {nanoid} from 'nanoid'
 import {PassiveGeneratorComponent} from './PassiveGenerator.component';
 import UpgradeListComponent from './UpgradeList.component';
+import ShopComponent from './Shop.component';
 
 const useStyles = makeStyles((theme) => ({
     gridContainer: {
@@ -43,6 +44,12 @@ export const MembersPageComponent: React.FC = () => {
         })
     }
 
+    const generateShop = () => {
+        return currentMember.generators.map(generator => {
+            return <ShopComponent key={nanoid()} {...generator}/>
+        })
+    }
+
     return(
         <Grid container spacing={1} className={classes.gridContainer}>
             <Grid item xs={4} className={classes.gridItem}>
@@ -57,8 +64,17 @@ export const MembersPageComponent: React.FC = () => {
                 {generatePassiveGenerator()}
             </Grid>
             <Grid item xs={4} className={classes.gridItem}>
-                <Typography>Upgrades</Typography>
-                <UpgradeListComponent upgrades={currentMember.upgrades} />
+                <div>
+                    <Typography>Shop</Typography>
+                    <br/>
+                    {generateShop()}
+                    <br/>
+                </div>
+                <br/>
+                <div>
+                    <Typography>Upgrades</Typography>
+                    <UpgradeListComponent upgrades={currentMember.upgrades} />
+                </div>
             </Grid>
         </Grid>
     );

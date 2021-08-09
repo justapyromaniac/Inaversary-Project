@@ -21,6 +21,7 @@ const UpgradeComponent: React.FC<UpgradeProps> = ({ upgrade }) => {
 
     return (
         <div>
+            <br/>
             {upgrade.name}
             {upgrade.type === "active" && (
                 <ActiveGeneratorUpgradeComponent
