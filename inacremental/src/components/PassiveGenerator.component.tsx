@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import PassiveResourceGenerator from "../services/PassiveGeneratorService";
 import { PassiveGenerator } from "../services/Generator";
+import { Button, Typography } from "@material-ui/core";
 
 export const PassiveGeneratorComponent: React.FC<PassiveGenerator> = (resource: PassiveGenerator) => {
     const [seconds, setSeconds] = useState(0);
@@ -32,10 +33,10 @@ export const PassiveGeneratorComponent: React.FC<PassiveGenerator> = (resource: 
 
     return (
         <div>
-        <button onClick={activateTimer}>activate timer</button>
-        <br></br>
-        <text>{seconds}</text>
-        <br></br>
+            <Button onClick={activateTimer}>activate timer</Button>
+            <br/>
+            <Typography>{seconds}</Typography>
+            <br/>
         </div>
     );
 }

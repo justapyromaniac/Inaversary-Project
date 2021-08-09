@@ -1,3 +1,4 @@
+import { Button } from "@material-ui/core";
 import ActiveGeneratorService from "../services/ActiveGeneratorService";
 import { Generator } from "../services/Generator";
 //test for active generator
@@ -8,6 +9,6 @@ export const IncrementButtonComponent: React.FC<Generator> = (resource: Generato
     }
 
     return (
-        <button onClick={() => handleClick()}>{resource.generatorName}</button>
+        <Button onClick={() => handleClick()}>{resource.generatorName}</Button>
     );
 }

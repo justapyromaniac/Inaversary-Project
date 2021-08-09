@@ -5,12 +5,22 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { MembersPageComponent } from './components/MemberPage';
 import { nanoid } from 'nanoid';
 import { Generation } from './services/VariableStore';
-import { makeStyles, Container, CssBaseline} from '@material-ui/core';
+import { makeStyles, Container, CssBaseline, ThemeProvider, createTheme} from '@material-ui/core';
 import { NavbarComponent } from './components/Navbar.component';
 
 /*
   General layout of the app. contains navigation, main gameplay and menus
 */
+const theme = createTheme({
+  overrides: {
+    MuiButton: {
+      root:{
+        textTransform: 'capitalize'
+      }
+    }
+  }
+})
+
 //material-ui in file styling. this functions just like scss/sass
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,18 +62,20 @@ const App: React.FC = () => {
   //move the appbar and drawer into the navbar component and fix padding there.
   //currently the appbar overlaps with the content, making it partially invisible
   return (
-    <BrowserRouter>
-      <CssBaseline />
-      <div className={classes.root}>
-        <NavbarComponent/>
-        <main className={classes.content}>
-          <div className={classes.appBarSpacer}/>
-          <Container className={classes.container} disableGutters={true} maxWidth={false}>
-            {generateRoutes(data.generations)}
-          </Container>
-        </main>
-      </div>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <CssBaseline />
+        <div className={classes.root}>
+          <NavbarComponent/>
+          <main className={classes.content}>
+            <div className={classes.appBarSpacer}/>
+            <Container className={classes.container} disableGutters={true} maxWidth={false}>
+              {generateRoutes(data.generations)}
+            </Container>
+          </main>
+        </div>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
