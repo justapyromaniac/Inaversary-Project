@@ -66,7 +66,6 @@ export const MembersPageComponent: React.FC = () => {
             <Grid item xs={4} className={classes.gridItem}>
                 <div>
                     <Typography>Shop</Typography>
-                    <br/>
                     {generateShop()}
                     <br/>
                 </div>

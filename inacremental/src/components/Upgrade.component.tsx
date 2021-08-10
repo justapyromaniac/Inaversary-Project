@@ -16,7 +16,11 @@ const UpgradeComponent: React.FC<UpgradeProps> = ({ upgrade }) => {
     const generator = VariableStore.getGeneratorService(upgrade.generatorName);
 
     const purchaseUpgrade = () => {
-        generator.purchaseUpgrade(upgrade.valueMultiplier);
+        if(upgrade.type == 'active'){
+            (generator as ActiveGeneratorService).purchaseUpgrade(upgrade.valueMultiplier, upgrade.purchasePrice);
+        }else{
+            (generator as PassiveGeneratorService).purchaseUpgrade(upgrade.valueMultiplier, upgrade.purchasePrice);
+        }
     }
 
     return (

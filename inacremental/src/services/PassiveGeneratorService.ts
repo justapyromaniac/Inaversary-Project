@@ -13,7 +13,11 @@ export default class PassiveGeneratorService extends GeneratorService {
         super.increment()
     }
 
-    public purchaseUpgrade(upgradeMultiplier: number): void{
-        super.purchaseUpgrade(upgradeMultiplier);
+    public purchaseUpgrade(upgradeMultiplier: number, upgradeCost: number): void{
+        super.purchaseUpgrade(upgradeMultiplier, upgradeCost);
+    }
+
+    public purchaseGenerator(generatorCost: number): void{
+        super.purchaseGenerator(generatorCost);
     }
 }

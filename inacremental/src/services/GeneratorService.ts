@@ -15,15 +15,17 @@ abstract class GeneratorService  {
     }
 
     protected increment(): void {
-        VariableStore.increaseMemberResource(VariableStore.CurrentMember.name, this.generatorValue * this.upgradeMultiplier * this.generatorCount);
+        VariableStore.increaseMemberResource(this.generatorValue * this.upgradeMultiplier * this.generatorCount);
     }
 
-    public purchaseUpgrade(upgradeMultiplier: number): void{
+    protected purchaseUpgrade(upgradeMultiplier: number, upgradeCost: number): void{
         this.setUpgradeMultiplier(this.upgradeMultiplier * upgradeMultiplier);
+        VariableStore.decreaseMemberResource(upgradeCost);
     }
 
-    public purchaseGenerator(): void{
+    protected purchaseGenerator(generatorCost: number): void{
         this.setGeneratorCount(this.generatorCount + 1);
+        VariableStore.decreaseMemberResource(generatorCost);
     }
 
     public setGeneratorCount(generatorCount: number): void{
