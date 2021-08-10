@@ -60,8 +60,6 @@ class VariableStore {
 
             this.GeneratorServiceList.push(generatorService);
         });
-
-        console.log(this.GeneratorServiceList);
     }
 
     //The only way to actually get the class, to ensure noone can change the instance somehow
@@ -109,17 +107,14 @@ class VariableStore {
         }
     }
 
-    //increase the resource amount
-    public increaseMemberResource(value: number): void {
-        this.updateMemberResource(value);
-    }
-
-    private updateMemberResource(value: number){
+    public updateMemberResource(value: number){
         //check if the resource actually exists before increasing it, otherwise you'll get an error
         let keyName = this.CurrentMember.generators[0].resourceName;
         let member = this.CurrentMember.name;
+
         const memberEntryExists = _.includes(Object.keys(this.Variables), member)
         const resourceEntryExists = this.Variables[member as keyof Object] !== undefined && (keyName in this.Variables[member as keyof Object])
+
         if (!resourceEntryExists || !memberEntryExists) {
             this.createNewEntry(member, keyName, value);
         } else {
@@ -139,11 +134,6 @@ class VariableStore {
                 }
             });
         }
-    }
-
-    // decreases member resource amount
-    public decreaseMemberResource(value: number): void{
-        this.updateMemberResource(value * -1);
     }
 
     registerCountersList(CountersList: UpdateCountersList): void {

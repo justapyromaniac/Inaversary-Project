@@ -1,18 +1,28 @@
+import _ from 'lodash';
+import { useEffect, useState } from 'react';
 import ActiveGeneratorService from '../services/ActiveGeneratorService';
 import {Generator} from '../services/Generator';
 import PassiveGeneratorService from '../services/PassiveGeneratorService';
-import VariableStore from '../services/VariableStore';
+import VariableStore, { UpdateObserver } from '../services/VariableStore';
 
 const ShopComponent: React.FC<Generator> = (generator: Generator) =>{
     const generatorService = VariableStore.getGeneratorService(generator.generatorName);
+    const [upgradeAvailable, setUpgradeAvailable] = useState(true);
+
+    const onUpdate: UpdateObserver = (resourceName: string, resourceValue: number) => {
+        if(_.isEqual(generator.resourceName, resourceName))
+            setUpgradeAvailable(generator.generatorPrice > resourceValue);
+    }
 
     const purchaseGenerator = () =>{
-        if(generator.generationType === 'active'){
-            (generatorService as ActiveGeneratorService).purchaseGenerator(generator.generatorPrice);
-        }else{
-            (generatorService as PassiveGeneratorService).purchaseGenerator(generator.generatorPrice);
-        }
+        generatorService.purchaseGenerator(generator.generatorPrice);
     }
+
+    useEffect(() => {
+        VariableStore.registerObserver(onUpdate);
+
+        return () => VariableStore.removeObserver(onUpdate);
+    })
 
     return (
         <div>
@@ -22,7 +32,7 @@ const ShopComponent: React.FC<Generator> = (generator: Generator) =>{
             <div>
                 Cost: {generator.generatorPrice} {generator.resourceName}
             </div>
-            <button onClick={purchaseGenerator}>Purchase</button>
+            <button disabled={upgradeAvailable} onClick={purchaseGenerator}>Purchase</button>
             <br/>
             <br/>
         </div>
