@@ -5,30 +5,21 @@ import ActiveGeneratorService from "../services/ActiveGeneratorService";
 import PassiveGeneratorService from "../services/PassiveGeneratorService";
 import {Upgrade} from "../services/Upgrade";
 import VariableStore, { UpdateObserver } from "../services/VariableStore";
-import ActiveGeneratorUpgradeComponent from "./ActiveGeneratorUpgrade.component";
 
-interface UpgradeProps {
-    upgrade: Upgrade;
-}
-
-const UpgradeComponent: React.FC<UpgradeProps> = ({ upgrade }) => {
+const UpgradeComponent: React.FC<Upgrade> = (upgrade: Upgrade) =>  {
     // TODO: have purchase functionality actually do something
     const [purchased, setPurchased] = useState(false)
     const generatorService = VariableStore.getGeneratorService(upgrade.generatorName);
     const [upgradeAvailable, setUpgradeAvailable] = useState(true);
 
     const onUpdate: UpdateObserver = (resourceName: string, resourceValue: number) => {
-        if(_.isEqual(upgrade.purchaseResourceName, resourceName))
-            setUpgradeAvailable(upgrade.purchasePrice > resourceValue);
+        if(_.isEqual(upgrade.resourceName, resourceName))
+            setUpgradeAvailable(upgrade.upgradePrice > resourceValue);
     }
 
     const purchaseUpgrade = () =>{
         if(!purchased){
-            if(upgrade.type === 'active'){
-                (generatorService as ActiveGeneratorService).purchaseUpgrade(upgrade.valueMultiplier, upgrade.purchasePrice);
-            }else{
-                (generatorService as PassiveGeneratorService).purchaseUpgrade(upgrade.valueMultiplier, upgrade.purchasePrice);
-            }
+            generatorService.purchaseUpgrade(upgrade.valueMultiplier, upgrade.upgradePrice);
 
             setPurchased(true);
         }
@@ -43,18 +34,16 @@ const UpgradeComponent: React.FC<UpgradeProps> = ({ upgrade }) => {
     return (
         <div>
             <br/>
-            {upgrade.name}
-            {upgrade.type === "active" && (
-                <ActiveGeneratorUpgradeComponent
-                    upgrade={upgrade}
-                />
-            )}
+            {upgrade.upgradeName}
+            <div>
+                Boost the effect of {upgrade.generatorName} by {upgrade.valueMultiplier}x!
+            </div>
             {purchased ? (
                 <button disabled={true}>Purchased</button>
             ) : (
                 <>
                     <div>
-                        Cost: {upgrade.purchasePrice} {upgrade.purchaseResourceName}
+                        Cost: {upgrade.upgradePrice} {upgrade.resourceName}
                     </div>
                     <button disabled={upgradeAvailable} onClick={purchaseUpgrade}>Purchase</button>
                 </>

@@ -8,7 +8,7 @@ import { Member } from "../services/Member";
 
 type toggleDrawer = (anchor: string, open: boolean) => (event: any) => void
 
-interface GenerationListItemProps {
+interface GeneratorListItemProps {
     generation: Generation,
     anchor: string,
     toggleDrawer: toggleDrawer
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-export const GenerationListItem: React.FC<GenerationListItemProps> = ({generation, anchor, toggleDrawer}) => {
+export const GeneratorListItem: React.FC<GeneratorListItemProps> = ({generation, anchor, toggleDrawer}) => {
     const classes = useStyles()
     const [open, setOpen] = useState<boolean>(false);
 

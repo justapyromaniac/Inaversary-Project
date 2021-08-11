@@ -47,14 +47,14 @@ class VariableStore {
 
     // creates a list of all the generators
     private generateServiceList(){
-        this.CurrentMember.generators.forEach(x=>{
+        this.CurrentMember.generators.forEach(member=>{
             let generatorService: GeneratorService;
             let passiveGenerator: PassiveGenerator;
 
-            if(x.generationType === 'active'){
-                generatorService = new ActiveGeneratorService(x.generatorName);
+            if(member.generatorType === 'active'){
+                generatorService = new ActiveGeneratorService(member.generatorName);
             }else{
-                passiveGenerator = x as PassiveGenerator;
+                passiveGenerator = member as PassiveGenerator;
                 generatorService = new PassiveGeneratorService(passiveGenerator.generatorName, passiveGenerator.generatorValue, passiveGenerator.generatorCooldown);
             }
 

@@ -12,12 +12,4 @@ export default class PassiveGeneratorService extends GeneratorService {
     public handleTimerEvent(): void {
         super.increment()
     }
-
-    public purchaseUpgrade(upgradeMultiplier: number, upgradeCost: number): void{
-        super.purchaseUpgrade(upgradeMultiplier, upgradeCost);
-    }
-
-    public purchaseGenerator(generatorCost: number): void{
-        super.purchaseGenerator(generatorCost);
-    }
 }

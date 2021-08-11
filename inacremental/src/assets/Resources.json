@@ -9,7 +9,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Soratomo 🐻",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -22,7 +22,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Robosa 🤖",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -35,7 +35,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Mikopi 🌸",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -48,7 +48,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Hoshiyomi ☄️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -61,7 +61,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Pioneers ⚒️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -79,7 +79,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Pioneers ⚒️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -97,7 +97,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Kapu-min 🌟",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -110,7 +110,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Rose-tai 🍎",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -123,7 +123,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Matsurisu 🏮",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -136,7 +136,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Sukon-bu 🌽",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -149,7 +149,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Haaton ❣️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -167,7 +167,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Aqua crew ⚓️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -180,7 +180,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Shiokko 🌙",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -193,7 +193,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Nakiri-gumi 👿",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -206,7 +206,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Choco mate 🍫💋",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -219,7 +219,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Suba-tomo 🚑",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -237,7 +237,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Sukon-bu 🌽",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -250,7 +250,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Mio-fa 🌲",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -263,7 +263,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Onigiryaa 🍙",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -276,7 +276,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Koronesuki 🥐",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -294,7 +294,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Nousagi ⚓️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -307,7 +307,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Fandeddo 🦋",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -320,7 +320,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Elfriend 🔥",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -333,7 +333,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Shirogane kishi-dan ⚔️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -346,7 +346,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Houshou no Ichimi 🏴‍☠️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -364,7 +364,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Wata-mates 🐏",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -377,7 +377,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Tokoyami Kenzoku 👾",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -390,7 +390,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Heimin 💫",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -403,7 +403,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Lu-knight 🍬",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -421,7 +421,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Yuki-min ☃️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -434,7 +434,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Nekko 🥟",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -447,7 +447,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "SSRB ♌",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -460,7 +460,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Omaruza 🎪",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -478,7 +478,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "IOFORIA 🎨",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -491,7 +491,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Moonafic 🔮",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -504,7 +504,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Risuners 🐿️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -522,7 +522,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Zomrades 🧟‍♀️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -535,7 +535,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Melfriends 🍂",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -548,7 +548,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "MERAKyats 🦚",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -566,14 +566,14 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Takodachi 🐙",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         },
                         {
                             "generatorName": "generator 2",
                             "resourceName": "Takodachi 🐙",
-                            "generationType": "passive",
+                            "generatorType": "passive",
                             "generatorCount": 1,
                             "generatorPrice": 10,
                             "generatorCooldown": 2,
@@ -582,26 +582,26 @@
                     ],
                     "upgrades": [
                         {
-                            "name": "Ancient One's Cookie Dough",
-                            "type": "active",
-                            "purchasePrice": 20,
-                            "purchaseResourceName": "Takodachi 🐙",
+                            "upgradeName": "Ancient One's Cookie Dough",
+                            "upgradeType": "active",
+                            "upgradePrice": 20,
+                            "resourceName": "Takodachi 🐙",
                             "generatorName": "generator 1",
                             "valueMultiplier": 3.0
                         },
                         {
-                            "name": "WAH",
-                            "type": "active",
-                            "purchasePrice": 100,
-                            "purchaseResourceName": "Takodachi 🐙",
+                            "upgradeName": "WAH",
+                            "upgradeType": "active",
+                            "upgradePrice": 100,
+                            "resourceName": "Takodachi 🐙",
                             "generatorName": "generator 1",
                             "valueMultiplier": 100.0
                         },
                         {
-                            "name": "Passive Test Upgrade",
-                            "type": "passive",
-                            "purchasePrice": 10,
-                            "purchaseResourceName": "Takodachi 🐙",
+                            "upgradeName": "Passive Test Upgrade",
+                            "upgradeType": "passive",
+                            "upgradePrice": 10,
+                            "resourceName": "Takodachi 🐙",
                             "generatorName": "generator 2",
                             "valueMultiplier": 5.0
                         }
@@ -613,16 +613,16 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Kiara Fan Club 🐔",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
                     ],
                     "upgrades": [                        {
-                        "name": "Test Upgrade",
-                        "type": "active",
-                        "purchasePrice": 20,
-                        "purchaseResourceName": "Kiara Fan Club 🐔",
+                        "upgradeName": "Test Upgrade",
+                        "upgradeType": "active",
+                        "upgradePrice": 20,
+                        "resourceName": "Kiara Fan Club 🐔",
                         "generatorName": "kotori",
                         "valueMultiplier": 3.0
                     }
@@ -634,7 +634,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Teamates 🔎",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -647,7 +647,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Dead Beats 💀",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -660,7 +660,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Chumbuds 🔱",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -678,7 +678,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "IRyStocrats 💎",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -696,7 +696,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Hanami-gumi 🌺",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -709,7 +709,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Nothing gang 🎸",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -722,7 +722,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Familiaran 🍕",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -735,7 +735,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Tuner ⚙️",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -753,7 +753,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Astellas 🎭",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -766,7 +766,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Kishi-men 🦔💨",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -779,7 +779,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Regulars 🍷",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -797,7 +797,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "Shiengumi 🟣",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }
@@ -810,7 +810,7 @@
                         {
                             "generatorName": "generator 1",
                             "resourceName": "OMAEsan 🐃",
-                            "generationType": "active",
+                            "generatorType": "active",
                             "generatorCount": 1,
                             "generatorPrice": 10
                         }

@@ -1,7 +1,7 @@
 export interface Generator {
     generatorName: string,
     resourceName: string,
-    generationType: string,
+    generatorType: string,
     generatorCount: number,
     generatorPrice: number
 }
