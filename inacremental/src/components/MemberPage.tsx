@@ -3,9 +3,11 @@ import _ from 'lodash';
 import VariableStore from '../services/VariableStore';
 import { Generator, PassiveGenerator } from '../services/Generator';
 import { CounterListComponent } from './Counters.component';
-import { IncrementButtonComponent } from './IncrementButton.component';
+import { ActiveGeneratorComponent } from './ActiveGenerator.component';
 import {nanoid} from 'nanoid'
 import {PassiveGeneratorComponent} from './PassiveGenerator.component';
+import ShopComponent from './Shop.component';
+import UpgradeComponent from './Upgrade.component';
 
 const useStyles = makeStyles((theme) => ({
     gridContainer: {
@@ -24,8 +26,8 @@ export const MembersPageComponent: React.FC = () => {
 
     const generateActiveGenerators = () => {
         return currentMember.generators.map(generator => {
-            if(_.isEqual(generator.generationType, "active")) {
-                return <IncrementButtonComponent key={nanoid()} {...generator}/>
+            if(_.isEqual(generator.generatorType, "active")) {
+                return <ActiveGeneratorComponent key={nanoid()} {...generator}/>
             } else {
                 return null;
             }
@@ -34,11 +36,23 @@ export const MembersPageComponent: React.FC = () => {
 
     const generatePassiveGenerator = () => {
         return currentMember.generators.map(generator => {
-            if(_.isEqual(generator.generationType, "passive")) {
+            if(_.isEqual(generator.generatorType, "passive")) {
                 return <PassiveGeneratorComponent key={nanoid()} {...generator as PassiveGenerator}/>
             } else {
                 return null;
             }
+        })
+    }
+
+    const generateShop = () => {
+        return currentMember.generators.map(generator => {
+            return <ShopComponent key={nanoid()} {...generator}/>
+        })
+    }
+
+    const generateUpgrades = () => {
+        return currentMember.upgrades.map(upgrade => {
+            return <UpgradeComponent key={nanoid()} {...upgrade}/>
         })
     }
 
@@ -56,7 +70,16 @@ export const MembersPageComponent: React.FC = () => {
                 {generatePassiveGenerator()}
             </Grid>
             <Grid item xs={4} className={classes.gridItem}>
-            <Typography>Upgrades (Coming soon!)</Typography>
+                <div>
+                    <Typography>Shop</Typography>
+                    {generateShop()}
+                    <br/>
+                </div>
+                <br/>
+                <div>
+                    <Typography>Upgrades</Typography>
+                    {generateUpgrades()}
+                </div>
             </Grid>
         </Grid>
     );

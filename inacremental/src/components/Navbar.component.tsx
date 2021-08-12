@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { Generation } from '../services/VariableStore';
 import * as data  from '../assets/Resources.json'
-import { GenerationListItem } from './GenerationListItem.component';
+import { GeneratorListItem } from './GeneratorListItem.component';
 import { 
     makeStyles, 
     Button, 
@@ -49,7 +49,7 @@ export const NavbarComponent: React.FC = () => {
                 {
                     generations.map(generation => {
                         return(
-                            <GenerationListItem key={nanoid()} generation={generation} anchor={anchor} toggleDrawer={toggleDrawer}/>
+                            <GeneratorListItem key={nanoid()} generation={generation} anchor={anchor} toggleDrawer={toggleDrawer}/>
                         );
                     })
                 }

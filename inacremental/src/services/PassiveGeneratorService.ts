@@ -1,7 +1,7 @@
 import GeneratorService from "./GeneratorService";
 
 //class for a passive generator. A generator that makes resource over time automatically
-export default class PassiveResourceGenerator extends GeneratorService {
+export default class PassiveGeneratorService extends GeneratorService {
     private generatorCooldown: number;
 
     constructor(generatorName: string, generationValue: number, generatorCooldown: number) {
