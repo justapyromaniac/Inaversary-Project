@@ -8,6 +8,8 @@ import {nanoid} from 'nanoid'
 import {PassiveGeneratorComponent} from './PassiveGenerator.component';
 import ShopComponent from './Shop.component';
 import UpgradeComponent from './Upgrade.component';
+import GoldenCookieComponent from './GoldenCookie.component';
+import GoldenCookieService from '../services/GoldenCookieService';
 
 const useStyles = makeStyles((theme) => ({
     gridContainer: {
@@ -19,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
     },
 }));
+
+export interface GoldenCookieProp{
+    cookieService: GoldenCookieService;
+}
 
 export const MembersPageComponent: React.FC = () => {
     const classes = useStyles();
@@ -56,6 +62,8 @@ export const MembersPageComponent: React.FC = () => {
         })
     }
 
+    let g = new GoldenCookieService();
+
     return(
         <Grid container spacing={1} className={classes.gridContainer}>
             <Grid item xs={4} className={classes.gridItem}>
@@ -79,6 +87,9 @@ export const MembersPageComponent: React.FC = () => {
                 <div>
                     <Typography>Upgrades</Typography>
                     {generateUpgrades()}
+                </div>
+                <div>
+                    <GoldenCookieComponent  key={nanoid()} cookieService={g}/>
                 </div>
             </Grid>
         </Grid>

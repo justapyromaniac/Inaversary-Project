@@ -4,7 +4,7 @@ import { Generator } from "../services/Generator";
 import VariableStore from "../services/VariableStore";
 //test for active generator
 export const ActiveGeneratorComponent: React.FC<Generator> = (resource: Generator) => {
-    const generator = VariableStore.getGeneratorService(resource.generatorName) as ActiveGeneratorService;
+    const generator = VariableStore.getGeneratorServiceByName(resource.generatorName) as ActiveGeneratorService;
 
     const handleClick = () => {
         generator.handleClick();
