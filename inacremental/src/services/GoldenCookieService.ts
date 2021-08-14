@@ -5,9 +5,12 @@ import VariableStore from "./VariableStore";
 export default class GoldenCookieService{
     private cookieType: string;
     private generatorName: string;
+    private xPosition;
+    private yPosition ;
 
     constructor(){
         this.selectRandomType();
+        this.randomizePosition();
     }
 
     public selectRandomGenerator(): void{
@@ -20,15 +23,15 @@ export default class GoldenCookieService{
             tempGenerator.push(temp);
         });
 
-        let random = Math.floor(Math.random()*tempGenerator.length);
+        let randomGenerator = Math.floor(Math.random()*tempGenerator.length);
 
-        this.generatorName = tempGenerator[random].getGeneratorName();
+        this.generatorName = tempGenerator[randomGenerator].getGeneratorName();
     }
 
     public selectRandomType(): void{
-        let random = Math.floor(Math.random()*3) + 1;
+        let randomEffect = Math.floor(Math.random()*3) + 1;
 
-        switch(random){
+        switch(randomEffect){
             case 1: this.cookieType = 'fixed'; break;
             case 2: this.cookieType = 'active'; break;
             case 3: this.cookieType = 'passive'; break;
@@ -36,7 +39,7 @@ export default class GoldenCookieService{
         }
     }
     
-    public apply(): void{
+    public applyCookieEffect(): void{
         if(this.cookieType === 'fixed'){
             VariableStore.addPercentage(15);
         }else{
@@ -48,18 +51,31 @@ export default class GoldenCookieService{
     private updateGenerator(){
         VariableStore.CurrentMember.generators
         .filter(generator => generator.generatorType === this.cookieType && this.generatorName === generator.generatorName)
-        .forEach(x=>{
-            let temp = VariableStore.getGeneratorServiceByName(x.generatorName);
+        .forEach(generator=>{
+            let temp = VariableStore.getGeneratorServiceByName(generator.generatorName);
             temp.setGeneratorCount(temp.getGeneratorCount() * 10);
         });
     }
 
-    public revert(): void{
+    public revertCookieEffect(): void{
         VariableStore.CurrentMember.generators
         .filter(generator => generator.generatorType === this.cookieType && this.generatorName === generator.generatorName)
-        .forEach(x=>{
-            let temp = VariableStore.getGeneratorServiceByName(x.generatorName);
+        .forEach(generator=>{
+            let temp = VariableStore.getGeneratorServiceByName(generator.generatorName);
             temp.setGeneratorCount(temp.getGeneratorCount() / 10);
         });
+    }
+
+    public getXPosition(): number{
+        return this.xPosition;
+    }
+
+    public getYPosition(): number{
+        return this.yPosition;
+    }
+
+    public randomizePosition(){
+        this.xPosition = Math.random() * window.innerWidth;
+        this.yPosition = Math.random() * window.innerHeight;
     }
 }

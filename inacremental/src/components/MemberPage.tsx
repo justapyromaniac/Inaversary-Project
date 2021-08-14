@@ -10,10 +10,12 @@ import ShopComponent from './Shop.component';
 import UpgradeComponent from './Upgrade.component';
 import GoldenCookieComponent from './GoldenCookie.component';
 import GoldenCookieService from '../services/GoldenCookieService';
+import zIndex from '@material-ui/core/styles/zIndex';
 
 const useStyles = makeStyles((theme) => ({
     gridContainer: {
         height: '100%',
+        zIndex: -1
     },
     gridItem: {
         border: '1px solid black',
@@ -62,10 +64,9 @@ export const MembersPageComponent: React.FC = () => {
         })
     }
 
-    let g = new GoldenCookieService();
-
     return(
-        <Grid container spacing={1} className={classes.gridContainer}>
+        <GoldenCookieComponent key={nanoid()} cookieService={new GoldenCookieService()}/>
+        /*<Grid container spacing={1} className={classes.gridContainer}>
             <Grid item xs={4} className={classes.gridItem}>
                 <Typography>{currentMember.name}</Typography>
                 <br/>
@@ -88,10 +89,7 @@ export const MembersPageComponent: React.FC = () => {
                     <Typography>Upgrades</Typography>
                     {generateUpgrades()}
                 </div>
-                <div>
-                    <GoldenCookieComponent  key={nanoid()} cookieService={g}/>
-                </div>
             </Grid>
-        </Grid>
+        </Grid>*/
     );
 }
