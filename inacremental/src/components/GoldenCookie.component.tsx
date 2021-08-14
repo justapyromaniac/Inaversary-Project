@@ -13,6 +13,7 @@ const GoldenCookieComponent: React.FC<GoldenCookieProp> = (goldenCookie) =>{
         }
     }
 
+    // numbers will need to be adjusted for play testing
     useEffect(() => {
         let interval: NodeJS.Timeout;
         let counter = 0;
@@ -28,7 +29,6 @@ const GoldenCookieComponent: React.FC<GoldenCookieProp> = (goldenCookie) =>{
                 setSeconds(seconds=>0);
             }
 
-    
             interval = setInterval(() => { 
                 setSeconds(seconds => seconds + 1);
             }, 1000);
@@ -39,7 +39,7 @@ const GoldenCookieComponent: React.FC<GoldenCookieProp> = (goldenCookie) =>{
 
                     console.log(counter);
     
-                    if(counter === 10){
+                    if(counter >= 5){
                         goldenCookie.cookieService.randomizePosition();
                         setVisibility("visible");
                     }
@@ -60,8 +60,8 @@ const GoldenCookieComponent: React.FC<GoldenCookieProp> = (goldenCookie) =>{
     });
 
     return (
-        <svg width="100%" height="100%">
-            <rect visibility={visibility} fill="orange" id="test" x={goldenCookie.cookieService.getXPosition()} y={goldenCookie.cookieService.getYPosition()} width="40" height="40" onClick={onClick}/>    
+        <svg width="100%" height="100%" style={{zIndex: 1, position: 'absolute'}}>
+            <rect visibility={visibility} fill="orange" id="test" x={goldenCookie.cookieService.getXPosition()} y={goldenCookie.cookieService.getYPosition()} width="40" height="40" onClick={onClick} opacity="1.0"/>    
         </svg>
     );
 };
