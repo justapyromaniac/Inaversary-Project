@@ -11,7 +11,6 @@ export const PassiveGeneratorComponent: React.FC<PassiveGenerator> = (resource: 
 
     const handleTimerEvent = () => {
         if(seconds > 0 && seconds % (generator as PassiveGeneratorService).getGeneratorCooldown() === 0){
-            console.log((generator as PassiveGeneratorService).getGeneratorCooldown());
             generator.handleTimerEvent();
         }
     }

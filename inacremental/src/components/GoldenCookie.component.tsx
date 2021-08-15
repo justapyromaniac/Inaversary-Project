@@ -4,64 +4,68 @@ import { GoldenCookieProp } from "./MemberPage";
 const GoldenCookieComponent: React.FC<GoldenCookieProp> = (goldenCookie) =>{
     const [seconds, setSeconds] = useState(0);
     const [isActive, setActive] = useState(false);
-    const [visibility, setVisibility] = useState("hidden");
+    const [opacity, setOpacity] = useState(0);
+    const [cookieLayer, setCookieLayer] = useState(0);
 
     const onClick = () => {
-        if(visibility === "visible"){
+        if(opacity !== 0){
             setActive(true);
-            setVisibility("hidden");
+            setOpacity(0);
         }
     }
 
     // numbers will need to be adjusted for play testing
     useEffect(() => {
         let interval: NodeJS.Timeout;
-        let counter = 0;
 
         if(isActive){
-            if(seconds === 0){
+            if(seconds >= 0 && cookieLayer > 0){
+                setCookieLayer(cookieLayer => 0);
                 goldenCookie.cookieService.applyCookieEffect();
             }
-
+    
             if(seconds === 10){
                 goldenCookie.cookieService.revertCookieEffect();
                 setActive(false);
                 setSeconds(seconds=>0);
             }
-
+    
             interval = setInterval(() => { 
                 setSeconds(seconds => seconds + 1);
             }, 1000);
+    
+            return () => clearInterval(interval);
         } else {     
+            let counter = 0;
+    
             interval = setInterval(() => { 
-                if(visibility === "hidden"){
+                if(opacity === 0 && seconds === 0){
                     counter = Math.round(Math.random() * 10);
-
-                    console.log(counter);
     
                     if(counter >= 5){
-                        goldenCookie.cookieService.randomizePosition();
-                        setVisibility("visible");
+                        goldenCookie.cookieService.randomizeCookie();
+                        setOpacity(opacity=>1);
+                        setCookieLayer(help=>10);
                     }
                 } else {
                     setSeconds(seconds=>seconds + 1);
-
-                    if(seconds === 5){
+                    
+                    if(seconds >= 5){
                         setActive(false);
-                        setVisibility("hidden");
+                        setOpacity(0);
                         setSeconds(seconds=>0);
+                        setCookieLayer(help => 0);
                     }
                 }
-                console.log(visibility, seconds);
             }, 1000);
+    
+            return () => clearInterval(interval);
         }
-
-        return () => clearInterval(interval);
     });
 
     return (
-        <svg width="100%" height="100%" style={{zIndex: 1, position: 'absolute'}}>
-            <rect visibility={visibility} fill="orange" id="test" x={goldenCookie.cookieService.getXPosition()} y={goldenCookie.cookieService.getYPosition()} width="40" height="40" onClick={onClick} opacity="1.0"/>    
+        <svg width="100%" height="100%" style={{zIndex: cookieLayer, position: 'absolute'}}>
+            <rect fill="orange" x={goldenCookie.cookieService.getXPosition()} y={goldenCookie.cookieService.getYPosition()} width="40" height="40" onClick={onClick} opacity={opacity} style={{zIndex: 3, position: 'relative'}}/>    
         </svg>
     );
 };

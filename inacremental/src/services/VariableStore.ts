@@ -144,7 +144,6 @@ class VariableStore {
     public addPercentage(percentage: number): void{
         let keyName = this.CurrentMember.generators[0].resourceName;
         let member = this.CurrentMember.name;
-        console.log(percentage);
 
         const memberEntryExists = _.includes(Object.keys(this.Variables), member)
         const resourceEntryExists = this.Variables[member as keyof Object] !== undefined && (keyName in this.Variables[member as keyof Object])
@@ -162,7 +161,6 @@ class VariableStore {
                         enumerable: true,
                     })
 
-                    console.log(key[1]);
                     Object.assign(this.Variables[member as keyof Object], temp)
                     this.notifyCountersList();
                     this.notifyObservers(keyName, key[1]);

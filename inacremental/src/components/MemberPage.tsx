@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         height: '100%',
         textAlign: 'center',
         position: 'static',
-        zIndex: 0
+        zIndex: 2
     },
 }));
 

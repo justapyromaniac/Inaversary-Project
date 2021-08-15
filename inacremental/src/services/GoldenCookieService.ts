@@ -9,8 +9,6 @@ export default class GoldenCookieService{
     private yPosition ;
 
     constructor(){
-        this.selectRandomType();
-        this.randomizePosition();
     }
 
     public selectRandomGenerator(): void{
@@ -37,6 +35,8 @@ export default class GoldenCookieService{
             case 3: this.cookieType = 'passive'; break;
             default: this.cookieType = 'fixed'; break;
         }
+
+        console.log(this.cookieType);
     }
     
     public applyCookieEffect(): void{
@@ -75,7 +75,20 @@ export default class GoldenCookieService{
     }
 
     public randomizePosition(){
-        this.xPosition = Math.random() * window.innerWidth;
-        this.yPosition = Math.random() * window.innerHeight;
+        this.xPosition = Math.random() * window.innerWidth + window.innerWidth * 0.05;
+        this.yPosition = Math.random() * window.innerHeight + window.innerHeight * 0.05;
+
+        if(this.xPosition >= window.innerWidth * 0.95){
+            this.xPosition = window.innerWidth * 0.95;
+        }
+
+        if(this.yPosition >= window.innerHeight * 0.87){
+            this.yPosition = window.innerHeight * 0.87;
+        }
+    }
+
+    public randomizeCookie(){
+        this.selectRandomType();
+        this.randomizePosition();
     }
 }
