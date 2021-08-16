@@ -1,3 +1,4 @@
+import { Button } from '@material-ui/core';
 import _ from 'lodash';
 import { useEffect, useState } from 'react';
 import ActiveGeneratorService from '../services/ActiveGeneratorService';
@@ -32,7 +33,7 @@ const ShopComponent: React.FC<Generator> = (generator: Generator) =>{
             <div>
                 Cost: {generator.generatorPrice} {generator.resourceName}
             </div>
-            <button disabled={upgradeAvailable} onClick={purchaseGenerator}>Purchase</button>
+            <Button disabled={upgradeAvailable} onClick={purchaseGenerator}>Purchase</Button>
             <br/>
             <br/>
         </div>

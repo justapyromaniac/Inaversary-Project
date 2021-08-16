@@ -1,3 +1,4 @@
+import { Button } from "@material-ui/core";
 import { SubscriptionsOutlined } from "@material-ui/icons";
 import _ from "lodash";
 import { useEffect, useState } from "react";
@@ -39,13 +40,13 @@ const UpgradeComponent: React.FC<Upgrade> = (upgrade: Upgrade) =>  {
                 Boost the effect of {upgrade.generatorName} by {upgrade.valueMultiplier}x!
             </div>
             {purchased ? (
-                <button disabled={true}>Purchased</button>
+                <Button disabled={true}>Purchased</Button>
             ) : (
                 <>
                     <div>
                         Cost: {upgrade.upgradePrice} {upgrade.resourceName}
                     </div>
-                    <button disabled={upgradeAvailable} onClick={purchaseUpgrade}>Purchase</button>
+                    <Button disabled={upgradeAvailable} onClick={purchaseUpgrade}>Purchase</Button>
                 </>
             )}
         </div>
