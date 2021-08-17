@@ -1,7 +1,6 @@
 import _ from "lodash";
 import * as data from '../assets/Resources.json'
-import { Upgrade } from './Upgrade'
-import {Member} from './Member'
+import { Member } from './Member'
 import GeneratorService from './GeneratorService'
 import ActiveGeneratorService from "./ActiveGeneratorService";
 import PassiveGeneratorService from "./PassiveGeneratorService";
