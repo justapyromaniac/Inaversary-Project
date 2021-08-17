@@ -1,5 +1,4 @@
 import GeneratorService from "./GeneratorService";
-import PassiveGeneratorService from "./PassiveGeneratorService";
 import VariableStore from "./VariableStore";
 
 export default class GoldenCookieService{
@@ -8,11 +7,8 @@ export default class GoldenCookieService{
     private xPosition;
     private yPosition ;
 
-    constructor(){
-    }
-
     public selectRandomGenerator(): void{
-        let tempGenerator: GeneratorService[] = new Array();
+        let tempGenerator: GeneratorService[] = [];
 
         VariableStore.CurrentMember.generators
         .filter(generatorType => generatorType.generatorType === this.cookieType)

@@ -1,17 +1,15 @@
 import { Grid, makeStyles, Typography } from '@material-ui/core';
 import _ from 'lodash';
 import VariableStore from '../services/VariableStore';
-import { Generator, PassiveGenerator } from '../services/Generator';
+import { PassiveGenerator } from '../services/Generator';
 import { CounterListComponent } from './Counters.component';
 import { ActiveGeneratorComponent } from './ActiveGenerator.component';
-import {nanoid} from 'nanoid'
-import {PassiveGeneratorComponent} from './PassiveGenerator.component';
+import { nanoid } from 'nanoid'
+import { PassiveGeneratorComponent } from './PassiveGenerator.component';
 import ShopComponent from './Shop.component';
 import UpgradeComponent from './Upgrade.component';
 import GoldenCookieComponent from './GoldenCookie.component';
 import GoldenCookieService from '../services/GoldenCookieService';
-import zIndex from '@material-ui/core/styles/zIndex';
-import { relative } from 'path';
 
 const useStyles = makeStyles((theme) => ({
     gridContainer: {
@@ -23,8 +21,6 @@ const useStyles = makeStyles((theme) => ({
         border: '1px solid black',
         height: '100%',
         textAlign: 'center',
-        position: 'static',
-        zIndex: 2
     },
 }));
 
@@ -71,7 +67,7 @@ export const MembersPageComponent: React.FC = () => {
 
     return(
         <Grid container spacing={1} className={classes.gridContainer}>
-        <GoldenCookieComponent key={nanoid()} cookieService={goldenCookieService}/>
+            <GoldenCookieComponent cookieService={goldenCookieService}/>
             <Grid item xs={4} className={classes.gridItem}>
                 <Typography>{currentMember.name}</Typography>
                 <br/>

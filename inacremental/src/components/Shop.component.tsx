@@ -1,8 +1,6 @@
 import _ from 'lodash';
 import { useEffect, useState } from 'react';
-import ActiveGeneratorService from '../services/ActiveGeneratorService';
-import {Generator} from '../services/Generator';
-import PassiveGeneratorService from '../services/PassiveGeneratorService';
+import { Generator } from '../services/Generator';
 import VariableStore, { UpdateObserver } from '../services/VariableStore';
 
 const ShopComponent: React.FC<Generator> = (generator: Generator) =>{

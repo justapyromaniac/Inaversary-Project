@@ -61,7 +61,7 @@ const GoldenCookieComponent: React.FC<GoldenCookieProp> = (goldenCookie) =>{
     
             return () => clearInterval(interval);
         }
-    });
+    }, [cookieLayer, goldenCookie.cookieService, isActive, opacity, seconds]);
 
     return (
         <svg width="100%" height="100%" style={{zIndex: cookieLayer, position: 'absolute'}}>

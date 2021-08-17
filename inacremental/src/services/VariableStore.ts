@@ -1,12 +1,10 @@
 import _ from "lodash";
 import * as data from '../assets/Resources.json'
-import { Upgrade } from './Upgrade'
-import {Member} from './Member'
+import { Member } from './Member'
 import GeneratorService from './GeneratorService'
 import ActiveGeneratorService from "./ActiveGeneratorService";
 import PassiveGeneratorService from "./PassiveGeneratorService";
 import { PassiveGenerator } from "./Generator";
-import { threadId } from "worker_threads";
 
 //a singleton class that will contain all global variables for resources in the game
 //call getInstance() and use one of the methods to increase or decrease the resource dynamically 
