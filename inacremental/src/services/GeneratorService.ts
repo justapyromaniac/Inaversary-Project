@@ -39,10 +39,6 @@ abstract class GeneratorService  {
     public getGeneratorName(): string{
         return this.generatorName;
     }
-
-    public getGeneratorCount(): number{
-        return this.generatorCount;
-    }
 }
 
 export default GeneratorService;

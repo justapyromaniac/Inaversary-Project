@@ -12,12 +12,4 @@ export default class PassiveGeneratorService extends GeneratorService {
     public handleTimerEvent(): void {
         super.increment()
     }
-
-    public setGeneratorCooldown(value: number){
-        this.generatorCooldown = this.generatorCooldown * value;
-    }
-
-    public getGeneratorCooldown(): number{
-        return this.generatorCooldown;
-    }
 }
