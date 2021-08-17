@@ -4,7 +4,7 @@ import { Generator } from '../services/Generator';
 import VariableStore, { UpdateObserver } from '../services/VariableStore';
 
 const ShopComponent: React.FC<Generator> = (generator: Generator) =>{
-    const generatorService = VariableStore.getGeneratorService(generator.generatorName);
+    const generatorService = VariableStore.getGeneratorServiceByName(generator.generatorName);
     const [upgradeAvailable, setUpgradeAvailable] = useState(true);
 
     const onUpdate: UpdateObserver = (resourceName: string, resourceValue: number) => {

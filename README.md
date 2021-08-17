@@ -28,4 +28,6 @@ Don't clutter them with functions that are not part of the component directly or
 
 When installing packages, ensure you're in the inacremental folder!
 
+Ensure you do not push any commits while merging branches!
+
 We're using material-ui for most of our components

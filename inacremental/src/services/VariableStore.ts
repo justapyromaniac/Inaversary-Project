@@ -75,8 +75,12 @@ class VariableStore {
     }
 
     // returns the GeneratorService with the matching GeneratorName
-    public getGeneratorService(generatorName: string): GeneratorService {
+    public getGeneratorServiceByName(generatorName: string): GeneratorService {
         return this.GeneratorServiceList.find( x => x.getGeneratorName() === generatorName);
+    }
+
+    public getGenerators(): GeneratorService[]{
+        return this.GeneratorServiceList;
     }
 
     //if the resource isn't registered, register it
@@ -120,6 +124,34 @@ class VariableStore {
             Object.entries(this.Variables[member as keyof Object]).forEach(key => {
                 if (key[0] === keyName) {
                     key[1] = key[1] + value;
+                    let temp = {};
+                    Object.defineProperty(temp, key[0], {
+                        value: key[1],
+                        writable: true,
+                        enumerable: true,
+                    })
+
+                    Object.assign(this.Variables[member as keyof Object], temp)
+                    this.notifyCountersList();
+                    this.notifyObservers(keyName, key[1]);
+                }
+            });
+        }
+    }
+
+    public addPercentage(percentage: number): void{
+        let keyName = this.CurrentMember.generators[0].resourceName;
+        let member = this.CurrentMember.name;
+
+        const memberEntryExists = _.includes(Object.keys(this.Variables), member)
+        const resourceEntryExists = this.Variables[member as keyof Object] !== undefined && (keyName in this.Variables[member as keyof Object])
+
+        if (!resourceEntryExists || !memberEntryExists) {
+            this.createNewEntry(member, keyName, 1);
+        } else {
+            Object.entries(this.Variables[member as keyof Object]).forEach(key => {
+                if (key[0] === keyName) {
+                    key[1] = key[1] + Math.ceil(key[1] * (percentage/100));
                     let temp = {};
                     Object.defineProperty(temp, key[0], {
                         value: key[1],
