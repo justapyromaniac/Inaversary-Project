@@ -22,9 +22,14 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+export interface GoldenCookieProp{
+    cookieService: GoldenCookieService;
+}
+
 export const MembersPageComponent: React.FC = () => {
     const classes = useStyles();
     const currentMember = VariableStore.CurrentMember;
+    const goldenCookieService = new GoldenCookieService();
 
     const generateActiveGenerators = () => {
         return currentMember.generators.map(generator => {
