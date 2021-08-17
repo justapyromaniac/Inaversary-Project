@@ -9,7 +9,7 @@ import VariableStore, { UpdateObserver } from "../services/VariableStore";
 const UpgradeComponent: React.FC<Upgrade> = (upgrade: Upgrade) =>  {
     // TODO: have purchase functionality actually do something
     const [purchased, setPurchased] = useState(false)
-    const generatorService = VariableStore.getGeneratorService(upgrade.generatorName);
+    const generatorService = VariableStore.getGeneratorServiceByName(upgrade.generatorName);
     const [upgradeAvailable, setUpgradeAvailable] = useState(true);
 
     const onUpdate: UpdateObserver = (resourceName: string, resourceValue: number) => {
