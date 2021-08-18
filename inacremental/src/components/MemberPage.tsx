@@ -14,6 +14,8 @@ import GoldenCookieService from '../services/GoldenCookieService';
 const useStyles = makeStyles((theme) => ({
     gridContainer: {
         height: '100%',
+        position: 'static',
+        zIndex: 0
     },
     gridItem: {
         border: '1px solid black',

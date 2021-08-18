@@ -8,6 +8,7 @@ const GoldenCookieComponent: React.FC<GoldenCookieProp> = (goldenCookie) =>{
     const [cookieLayer, setCookieLayer] = useState(0);
 
     const onClick = () => {
+        console.log("click")
         if(opacity !== 0){
             setActive(true);
             setOpacity(0);
@@ -64,7 +65,7 @@ const GoldenCookieComponent: React.FC<GoldenCookieProp> = (goldenCookie) =>{
     }, [cookieLayer, goldenCookie.cookieService, isActive, opacity, seconds]);
 
     return (
-        <svg width="100%" height="100%" style={{zIndex: cookieLayer, position: 'absolute'}}>
+        <svg width="100%" height="100%" style={{position: 'absolute'}}>
             <rect fill="orange" x={goldenCookie.cookieService.getXPosition()} y={goldenCookie.cookieService.getYPosition()} width="40" height="40" onClick={onClick} opacity={opacity} style={{zIndex: 3, position: 'relative'}}/>    
         </svg>
     );

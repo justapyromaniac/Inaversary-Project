@@ -688,6 +688,76 @@
             ]
         },
         {
+            "generationName": "holoCouncil",
+            "members": [
+                {
+                    "name": "Tsukumo Sana (Coming soon!)",
+                    "generators": [
+                        {
+                            "generatorName": "",
+                            "resourceName": "",
+                            "generatorType": "active",
+                            "generatorCount": 1,
+                            "generatorPrice": 10
+                        }
+                    ],
+                    "upgrades": []
+                },
+                {
+                    "name": "Ceres Fauna (Coming soon!)",
+                    "generators": [
+                        {
+                            "generatorName": "",
+                            "resourceName": "",
+                            "generatorType": "active",
+                            "generatorCount": 1,
+                            "generatorPrice": 10
+                        }
+                    ],
+                    "upgrades": []
+                },
+                {
+                    "name": "Ouro Kronii (Coming soon!)",
+                    "generators": [
+                        {
+                            "generatorName": "",
+                            "resourceName": "",
+                            "generatorType": "active",
+                            "generatorCount": 1,
+                            "generatorPrice": 10
+                        }
+                    ],
+                    "upgrades": []
+                },
+                {
+                    "name": "Nanashi Mumei (Coming soon!)",
+                    "generators": [
+                        {
+                            "generatorName": "",
+                            "resourceName": "",
+                            "generatorType": "active",
+                            "generatorCount": 1,
+                            "generatorPrice": 10
+                        }
+                    ],
+                    "upgrades": []
+                },
+                {
+                    "name": "Hakos Baelz (Coming soon!)",
+                    "generators": [
+                        {
+                            "generatorName": "",
+                            "resourceName": "",
+                            "generatorType": "active",
+                            "generatorCount": 1,
+                            "generatorPrice": 10
+                        }
+                    ],
+                    "upgrades": []
+                }
+            ]
+        },
+        {
             "generationName": "holostars 1st gen",
             "members": [
                 {
