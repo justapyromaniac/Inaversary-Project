@@ -1,16 +1,19 @@
 import { Button } from "@material-ui/core";
-import { SubscriptionsOutlined } from "@material-ui/icons";
 import _ from "lodash";
 import { useEffect, useState } from "react";
-import ActiveGeneratorService from "../services/ActiveGeneratorService";
-import PassiveGeneratorService from "../services/PassiveGeneratorService";
-import {Upgrade} from "../services/Upgrade";
+import { Upgrade } from "../services/Upgrade";
 import VariableStore, { UpdateObserver } from "../services/VariableStore";
+import { Generator } from '../services/Generator';
 
-const UpgradeComponent: React.FC<Upgrade> = (upgrade: Upgrade) =>  {
+interface UpgradeComponentProps {
+    upgrade: Upgrade,
+    generator: Generator
+}
+
+const UpgradeComponent: React.FC<UpgradeComponentProps> = ({upgrade, generator}) =>  {
     // TODO: have purchase functionality actually do something
-    const [purchased, setPurchased] = useState(false)
-    const generatorService = VariableStore.getGeneratorService(upgrade.generatorName);
+    const [purchased, setPurchased] = useState(false);
+    const generatorService = VariableStore.getGeneratorService(generator.generatorName);
     const [upgradeAvailable, setUpgradeAvailable] = useState(true);
 
     const onUpdate: UpdateObserver = (resourceName: string, resourceValue: number) => {
@@ -37,7 +40,7 @@ const UpgradeComponent: React.FC<Upgrade> = (upgrade: Upgrade) =>  {
             <br/>
             {upgrade.upgradeName}
             <div>
-                Boost the effect of {upgrade.generatorName} by {upgrade.valueMultiplier}x!
+                
             </div>
             {purchased ? (
                 <Button disabled={true}>Purchased</Button>

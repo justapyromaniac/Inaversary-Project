@@ -10,11 +10,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Soratomo 🐻",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Roboco (Coming soon!)",
@@ -23,11 +22,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Robosa 🤖",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Sakura Miko (Coming soon!)",
@@ -36,11 +34,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Mikopi 🌸",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Hishomachi Suisei (Coming soon!)",
@@ -49,11 +46,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Hoshiyomi ☄️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "AZKi (Coming soon!)",
@@ -62,11 +58,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Pioneers ⚒️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }            
             ]
         },
@@ -80,11 +75,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Pioneers ⚒️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         },
@@ -98,11 +92,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Kapu-min 🌟",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Aki Rosenthal (Coming soon!)",
@@ -111,11 +104,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Rose-tai 🍎",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Natsuiro Matsuri (Coming soon!)",
@@ -124,11 +116,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Matsurisu 🏮",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Shirakami Fubuki (Coming soon!)",
@@ -137,11 +128,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Sukon-bu 🌽",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Akai Haato (Coming soon!)",
@@ -150,11 +140,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Haaton ❣️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         }, 
@@ -168,11 +157,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Aqua crew ⚓️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Murasaki Shion (Coming soon!)",
@@ -181,11 +169,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Shiokko 🌙",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Nakiri Ayame (Coming soon!)",
@@ -194,11 +181,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Nakiri-gumi 👿",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Yuzuki Choco (Coming soon!)",
@@ -207,11 +193,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Choco mate 🍫💋",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Oozora Subaru (Coming soon!)",
@@ -220,11 +205,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Suba-tomo 🚑",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         },
@@ -238,11 +222,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Sukon-bu 🌽",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Ookami Mio (Coming soon!)",
@@ -251,11 +234,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Mio-fa 🌲",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Nekomata Okayu (Coming soon!)",
@@ -264,11 +246,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Onigiryaa 🍙",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Inugami Korone (Coming soon!)",
@@ -277,11 +258,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Koronesuki 🥐",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         }, 
@@ -295,11 +275,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Nousagi ⚓️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Uruha Rushia (Coming soon!)",
@@ -308,11 +287,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Fandeddo 🦋",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Shiranui Flare (Coming soon!)",
@@ -321,11 +299,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Elfriend 🔥",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Shirogane Noel (Coming soon!)",
@@ -334,11 +311,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Shirogane kishi-dan ⚔️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Houshou Marine (Coming soon!)",
@@ -347,11 +323,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Houshou no Ichimi 🏴‍☠️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         },
@@ -365,11 +340,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Wata-mates 🐏",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Tokoyami Towa (Coming soon!)",
@@ -378,11 +352,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Tokoyami Kenzoku 👾",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Amane Kanata (Coming soon!)",
@@ -391,11 +364,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Heimin 💫",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Himemori Luna (Coming soon!)",
@@ -404,11 +376,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Lu-knight 🍬",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         },
@@ -422,11 +393,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Yuki-min ☃️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Momosuzu Nene (Coming soon!)",
@@ -435,11 +405,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Nekko 🥟",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Shishiro Botan (Coming soon!)",
@@ -448,11 +417,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "SSRB ♌",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Omaru Polka (Coming soon!)",
@@ -461,11 +429,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Omaruza 🎪",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         },
@@ -479,11 +446,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "IOFORIA 🎨",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Moona Hoshinova (Coming soon!)",
@@ -492,11 +458,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Moonafic 🔮",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Ayunda Risu (Coming soon!)",
@@ -505,11 +470,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Risuners 🐿️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         }, 
@@ -523,11 +487,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Zomrades 🧟‍♀️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Anya Melfissa (Coming soon!)",
@@ -536,11 +499,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Melfriends 🍂",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Pavolia Reine (Coming soon!)",
@@ -549,11 +511,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "MERAKyats 🦚",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         },
@@ -564,46 +525,44 @@
                     "name": "Ninomae Ina'nis",
                     "generators": [
                         {
-                            "generatorName": "generator 1",
+                            "generatorName": "Cookie",
                             "resourceName": "Takodachi 🐙",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 0,
+                            "generatorValue": 1,
+                            "upgrades": [
+                                {
+                                    "upgradeName": "Ancient One's Cookie Dough",
+                                    "upgradePrice": 20,
+                                    "resourceName": "Takodachi 🐙",
+                                    "generatorName": "Cookie",
+                                    "valueMultiplier": 3.0
+                                },
+                                {
+                                    "upgradeName": "WAH",
+                                    "upgradePrice": 100,
+                                    "resourceName": "Takodachi 🐙",
+                                    "generatorName": "Cookie",
+                                    "valueMultiplier": 100.0
+                                }
+                            ]
                         },
                         {
-                            "generatorName": "generator 2",
+                            "generatorName": "Bakery",
                             "resourceName": "Takodachi 🐙",
                             "generatorType": "passive",
-                            "generatorCount": 1,
-                            "generatorPrice": 10,
+                            "generatorPrice": 15,
                             "generatorCooldown": 2,
-                            "generatorValue": 1
-                        }
-                    ],
-                    "upgrades": [
-                        {
-                            "upgradeName": "Ancient One's Cookie Dough",
-                            "upgradeType": "active",
-                            "upgradePrice": 20,
-                            "resourceName": "Takodachi 🐙",
-                            "generatorName": "generator 1",
-                            "valueMultiplier": 3.0
-                        },
-                        {
-                            "upgradeName": "WAH",
-                            "upgradeType": "active",
-                            "upgradePrice": 100,
-                            "resourceName": "Takodachi 🐙",
-                            "generatorName": "generator 1",
-                            "valueMultiplier": 100.0
-                        },
-                        {
-                            "upgradeName": "Passive Test Upgrade",
-                            "upgradeType": "passive",
-                            "upgradePrice": 10,
-                            "resourceName": "Takodachi 🐙",
-                            "generatorName": "generator 2",
-                            "valueMultiplier": 5.0
+                            "generatorValue": 1,
+                            "upgrades": [
+                                {
+                                    "upgradeName": "Passive Test Upgrade",
+                                    "upgradePrice": 10,
+                                    "resourceName": "Takodachi 🐙",
+                                    "generatorName": "Bakery",
+                                    "valueMultiplier": 5.0
+                                }
+                            ]
                         }
                     ]
                 },
@@ -614,19 +573,19 @@
                             "generatorName": "generator 1",
                             "resourceName": "Kiara Fan Club 🐔",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": [                        
+                                {
+                                    "upgradeName": "Test Upgrade",
+                                    "upgradeType": "active",
+                                    "upgradePrice": 20,
+                                    "resourceName": "Kiara Fan Club 🐔",
+                                    "generatorName": "kotori",
+                                    "valueMultiplier": 3.0
+                                }
+                            ]
                         }
-                    ],
-                    "upgrades": [                        {
-                        "upgradeName": "Test Upgrade",
-                        "upgradeType": "active",
-                        "upgradePrice": 20,
-                        "resourceName": "Kiara Fan Club 🐔",
-                        "generatorName": "kotori",
-                        "valueMultiplier": 3.0
-                    }
-                ]
+                    ]
                 },
                 {
                     "name": "Watson Amelia (Coming soon!)",
@@ -635,11 +594,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Teamates 🔎",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Mori Calliope (Coming soon!)",
@@ -648,11 +606,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Dead Beats 💀",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Gawr Gura (Coming soon!)",
@@ -661,11 +618,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Chumbuds 🔱",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         }, 
@@ -679,11 +635,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "IRyStocrats 💎",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         },
@@ -697,11 +652,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Hanami-gumi 🌺",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Kanade Izuru (Coming soon!)",
@@ -710,11 +664,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Nothing gang 🎸",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Arurandeisu (Coming soon!)",
@@ -723,11 +676,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Familiaran 🍕",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Rikka (Coming soon!)",
@@ -736,11 +688,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Tuner ⚙️",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         },
@@ -754,11 +705,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Astellas 🎭",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Kishido Temma (Coming soon!)",
@@ -767,11 +717,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Kishi-men 🦔💨",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Yukoku Roberu (Coming soon!)",
@@ -780,11 +729,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Regulars 🍷",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         },
@@ -798,11 +746,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "Shiengumi 🟣",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 },
                 {
                     "name": "Aragami Oga (Coming soon!)",
@@ -811,11 +758,10 @@
                             "generatorName": "generator 1",
                             "resourceName": "OMAEsan 🐃",
                             "generatorType": "active",
-                            "generatorCount": 1,
-                            "generatorPrice": 10
+                            "generatorPrice": 10,
+                            "upgrades": []
                         }
-                    ],
-                    "upgrades": []
+                    ]
                 }
             ]
         }

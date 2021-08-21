@@ -1,6 +1,5 @@
 import _ from "lodash";
 import * as data from '../assets/Resources.json'
-import { Upgrade } from './Upgrade'
 import {Member} from './Member'
 import GeneratorService from './GeneratorService'
 import ActiveGeneratorService from "./ActiveGeneratorService";
@@ -52,10 +51,10 @@ class VariableStore {
             let passiveGenerator: PassiveGenerator;
 
             if(member.generatorType === 'active'){
-                generatorService = new ActiveGeneratorService(member.generatorName);
+                generatorService = new ActiveGeneratorService(member.generatorName, 1, member.generatorPrice, member.resourceName);
             }else{
                 passiveGenerator = member as PassiveGenerator;
-                generatorService = new PassiveGeneratorService(passiveGenerator.generatorName, passiveGenerator.generatorValue, passiveGenerator.generatorCooldown);
+                generatorService = new PassiveGeneratorService(passiveGenerator.generatorName, passiveGenerator.generatorValue, passiveGenerator.resourceName, passiveGenerator.generatorPrice, passiveGenerator.generatorCooldown);
             }
 
             this.GeneratorServiceList.push(generatorService);
@@ -77,7 +76,7 @@ class VariableStore {
 
     // returns the GeneratorService with the matching GeneratorName
     public getGeneratorService(generatorName: string): GeneratorService {
-        return this.GeneratorServiceList.find( x => x.getGeneratorName() === generatorName);
+        return this.GeneratorServiceList.find( x => x.getGeneratorName === generatorName);
     }
 
     //if the resource isn't registered, register it
@@ -131,6 +130,7 @@ class VariableStore {
                     Object.assign(this.Variables[member as keyof Object], temp)
                     this.notifyCountersList();
                     this.notifyObservers(keyName, key[1]);
+                    console.log(this.GeneratorServiceList)
                 }
             });
         }

@@ -1,11 +1,11 @@
-import { Grid, makeStyles, Typography, Box, AppBar, Tabs, Tab } from '@material-ui/core';
+import { Grid, makeStyles, Typography, AppBar, Tabs, Tab } from '@material-ui/core';
 import _ from 'lodash';
 import VariableStore from '../services/VariableStore';
-import { PassiveGenerator } from '../services/Generator';
+//import { PassiveGenerator } from '../services/Generator';
 import { CounterListComponent } from './Counters.component';
 import { ActiveGeneratorComponent } from './ActiveGenerator.component';
 import { nanoid } from 'nanoid'
-import { PassiveGeneratorComponent } from './PassiveGenerator.component';
+//import { PassiveGeneratorComponent } from './PassiveGenerator.component';
 import ShopComponent from './Shop.component';
 import UpgradeComponent from './Upgrade.component';
 import { useState } from 'react';
@@ -77,7 +77,8 @@ export const MembersPageComponent: React.FC = () => {
         })
     }
 
-    const generatePassiveGenerator = () => {
+    /*
+    const generatePassiveGenerators = () => {
         return currentMember.generators.map(generator => {
             if(_.isEqual(generator.generatorType, "passive")) {
                 return <PassiveGeneratorComponent key={nanoid()} {...generator as PassiveGenerator}/>
@@ -86,16 +87,22 @@ export const MembersPageComponent: React.FC = () => {
             }
         })
     }
+    */
 
     const generateShop = () => {
         return currentMember.generators.map(generator => {
-            return <ShopComponent key={nanoid()} {...generator}/>
+            if(generator.generatorType === "passive") {
+                return <ShopComponent key={nanoid()} {...generator}/>
+            }
+            return null;
         })
     }
 
     const generateUpgrades = () => {
-        return currentMember.upgrades.map(upgrade => {
-            return <UpgradeComponent key={nanoid()} {...upgrade}/>
+        return currentMember.generators.map(generator => {
+            return generator.upgrades.map(upgrade => {
+                return <UpgradeComponent key={nanoid()} upgrade={upgrade} generator={generator}/>
+            })
         })
     }
 
@@ -111,8 +118,6 @@ export const MembersPageComponent: React.FC = () => {
             </Grid>
             <Grid item xs={4} className={classes.gridItem}>
                 <Typography>Idle generators (Coming soon!)</Typography>
-                <br/>
-                {generatePassiveGenerator()}
             </Grid>
             <Grid item xs={4} className={classes.gridItem}>
                 <div className={classes.tabsRoot}>
@@ -131,11 +136,9 @@ export const MembersPageComponent: React.FC = () => {
                         </Tabs>
                     </AppBar>
                     <TabPanel value={value} index={0}>
-                        <Typography>Shop</Typography>
                         {generateShop()}
                     </TabPanel>
                     <TabPanel value={value} index={1}>
-                        <Typography>Upgrades</Typography>
                         {generateUpgrades()}
                     </TabPanel>
                 </div>
