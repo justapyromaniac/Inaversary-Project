@@ -96,9 +96,14 @@ export const MembersPageComponent: React.FC = () => {
     }
     */
 
+    /*golden cookie creates the following bugs:
+    1: generator price increases
+    2: resources with fractions in them
+    3: somehow you can get 0.1 generator?
+    */
     return(
         <Grid container className={classes.gridContainer}>
-            <GoldenCookieComponent cookieService={goldenCookieService}/>
+            {/*<GoldenCookieComponent cookieService={goldenCookieService}/>*/}
             <Grid item xs={4} className={classes.gridItem}>
                 <Typography>{currentMember.name}</Typography>
                 <br/>

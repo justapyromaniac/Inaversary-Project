@@ -28,11 +28,10 @@ export default class PassiveGeneratorService extends GeneratorService {
         super.increment()
     }
 
-    public setGeneratorCooldown(value: number){
-        this.generatorCooldown = this.generatorCooldown * value;
-    }
-
-    public getGeneratorCooldown(): number{
-        return this.generatorCooldown;
+    public override purchaseGenerator(): void {
+        if(this.generatorCount < 1) {
+            this.startInterval();
+        }
+        super.purchaseGenerator();
     }
 }
