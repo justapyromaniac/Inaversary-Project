@@ -19,7 +19,7 @@ export default class GoldenCookieService{
 
         let randomGenerator = Math.floor(Math.random()*tempGenerator.length);
 
-        this.generatorName = tempGenerator[randomGenerator].getGeneratorName();
+        this.generatorName = tempGenerator[randomGenerator].getGeneratorName;
     }
 
     public selectRandomType(): void{
@@ -49,7 +49,7 @@ export default class GoldenCookieService{
         .filter(generator => generator.generatorType === this.cookieType && this.generatorName === generator.generatorName)
         .forEach(generator=>{
             let temp = VariableStore.getGeneratorServiceByName(generator.generatorName);
-            temp.setGeneratorCount(temp.getGeneratorCount() * 10);
+            temp.setGeneratorCount = temp.getGeneratorCount * 10;
         });
     }
 
@@ -58,7 +58,7 @@ export default class GoldenCookieService{
         .filter(generator => generator.generatorType === this.cookieType && this.generatorName === generator.generatorName)
         .forEach(generator=>{
             let temp = VariableStore.getGeneratorServiceByName(generator.generatorName);
-            temp.setGeneratorCount(temp.getGeneratorCount() / 10);
+            temp.setGeneratorCount = temp.getGeneratorCount / 10;
         });
     }
 

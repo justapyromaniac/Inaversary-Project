@@ -8,7 +8,7 @@ import { Member } from "../services/Member";
 
 type toggleDrawer = (anchor: string, open: boolean) => (event: any) => void
 
-interface GeneratorListItemProps {
+interface MemberListItemProps {
     generation: Generation,
     anchor: string,
     toggleDrawer: toggleDrawer
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-export const GeneratorListItem: React.FC<GeneratorListItemProps> = ({generation, anchor, toggleDrawer}) => {
+export const MemberListItem: React.FC<MemberListItemProps> = ({generation, anchor, toggleDrawer}) => {
     const classes = useStyles()
     const [open, setOpen] = useState<boolean>(false);
 
@@ -81,7 +81,7 @@ export const GeneratorListItem: React.FC<GeneratorListItemProps> = ({generation,
                     display='block'
                     variant='overline'
                 >
-                    <Button onClick={handleClick} className={classes.button}>
+                    <Button variant='text' onClick={handleClick} className={classes.button}>
                         {generation.generationName}
                         {open ? <ExpandLess /> : <ExpandMore />}
                     </Button>

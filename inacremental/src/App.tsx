@@ -18,6 +18,11 @@ const theme = createTheme({
         textTransform: 'capitalize'
       }
     }
+  }, 
+  props: {
+    MuiButton: {
+      variant: 'contained'
+    }
   }
 })
 
@@ -59,8 +64,7 @@ const App: React.FC = () => {
       </Switch>
     );
   }
-  //move the appbar and drawer into the navbar component and fix padding there.
-  //currently the appbar overlaps with the content, making it partially invisible
+  
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
