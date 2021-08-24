@@ -6,9 +6,9 @@ import { CounterListComponent } from './Counters.component';
 import { ActiveGeneratorComponent } from './ActiveGenerator.component';
 import { nanoid } from 'nanoid'
 //import { PassiveGeneratorComponent } from './PassiveGenerator.component';
-import ShopComponent from './Shop.component';
-import UpgradeComponent from './Upgrade.component';
 import { useState } from 'react';
+import { ShopListComponent } from './shop/ShopList.Component';
+import { UpgradeListComponent } from './upgrades/UpgradeList.component';
 
 const useStyles = makeStyles((theme) => ({
     tabsRoot: {
@@ -89,25 +89,6 @@ export const MembersPageComponent: React.FC = () => {
     }
     */
 
-    const generateShop = () => {
-        return currentMember.generators.map(generator => {
-            if(generator.generatorType === "passive") {
-                return <ShopComponent key={nanoid()} {...generator}/>
-            }
-            return null;
-        })
-    }
-
-    const generateUpgrades = () => {
-        return currentMember.generators.map(generator => {
-            return generator.upgrades.map(upgrade => {
-                return <UpgradeComponent key={nanoid()} upgrade={upgrade} generator={generator}/>
-            })
-        })
-    }
-
-
-
     return(
         <Grid container className={classes.gridContainer}>
             <Grid item xs={4} className={classes.gridItem}>
@@ -136,10 +117,10 @@ export const MembersPageComponent: React.FC = () => {
                         </Tabs>
                     </AppBar>
                     <TabPanel value={value} index={0}>
-                        {generateShop()}
+                        <ShopListComponent {...currentMember}/>
                     </TabPanel>
                     <TabPanel value={value} index={1}>
-                        {generateUpgrades()}
+                        <UpgradeListComponent {...currentMember}/>
                     </TabPanel>
                 </div>
             </Grid>

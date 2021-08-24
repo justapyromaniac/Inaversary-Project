@@ -11,6 +11,8 @@ export const ActiveGeneratorComponent: React.FC<Generator> = (resource: Generato
     }
 
     return (
-        <Button onClick={() => handleClick()}>{resource.generatorName}</Button>
+        <div>
+            <Button onClick={() => handleClick()}>{resource.generatorName}</Button>
+        </div>
     );
 }

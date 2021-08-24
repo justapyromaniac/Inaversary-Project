@@ -5,6 +5,7 @@ import GeneratorService from './GeneratorService'
 import ActiveGeneratorService from "./ActiveGeneratorService";
 import PassiveGeneratorService from "./PassiveGeneratorService";
 import { PassiveGenerator } from "./Generator";
+import { Upgrade } from "./Upgrade";
 
 //a singleton class that will contain all global variables for resources in the game
 //call getInstance() and use one of the methods to increase or decrease the resource dynamically 
@@ -30,6 +31,8 @@ class VariableStore {
 
     public CurrentMember!: Member;
 
+    private PurchasedUpgradesList: Upgrade[];
+
     //the only instance of this class ever
     private static _instance: VariableStore
 
@@ -39,6 +42,7 @@ class VariableStore {
         this.Variables = {};
         this.Observers = [];
         this.GeneratorServiceList = [];
+        this.PurchasedUpgradesList = [];
         this.CountersList = undefined;
         this.CurrentMember = data.generations[10].members[0];    
         this.generateServiceList();    
@@ -61,6 +65,14 @@ class VariableStore {
         });
     }
 
+    public addPurchasedUpgrade(upgrade: Upgrade): void {
+        this.PurchasedUpgradesList.push(upgrade);
+    }
+
+    public get getPurchasedUpgradesList(): Upgrade[] {
+        return this.PurchasedUpgradesList;
+    }
+
     //The only way to actually get the class, to ensure noone can change the instance somehow
     public static get getInstance(): VariableStore {
         if (this._instance === undefined) {
@@ -77,6 +89,18 @@ class VariableStore {
     // returns the GeneratorService with the matching GeneratorName
     public getGeneratorService(generatorName: string): GeneratorService {
         return this.GeneratorServiceList.find( x => x.getGeneratorName === generatorName);
+    }
+
+    public getResourceValue(resourceName: string): number {
+        let output = 0;
+        if(!_.isEqual(this.Variables, {})) {
+            Object.entries(this.Variables[this.CurrentMember.name as keyof Object]).forEach(resource => {
+                if(_.isEqual(resource[0], resourceName)) {
+                    output = resource[1];
+                }
+            })
+        }
+        return output;
     }
 
     //if the resource isn't registered, register it
@@ -130,7 +154,8 @@ class VariableStore {
                     Object.assign(this.Variables[member as keyof Object], temp)
                     this.notifyCountersList();
                     this.notifyObservers(keyName, key[1]);
-                    console.log(this.GeneratorServiceList)
+                    //console.log(this.Variables)
+                    //console.log(this.GeneratorServiceList)
                 }
             });
         }

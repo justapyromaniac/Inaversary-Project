@@ -1,6 +1,8 @@
-import {Generator} from './Generator';
+import { Generator } from './Generator';
+import { Upgrade } from './Upgrade';
 
 export interface Member {
     name: string,
-    generators: Generator[]
+    generators: Generator[],
+    upgrades: Upgrade[]
 }

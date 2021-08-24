@@ -1,11 +1,8 @@
-import { Upgrade } from "./Upgrade";
-
 export interface Generator {
     generatorName: string,
     resourceName: string,
     generatorType: string,
-    generatorPrice: number,
-    upgrades: Upgrade[]
+    generatorPrice: number
 }
 
 export interface PassiveGenerator extends Generator{
