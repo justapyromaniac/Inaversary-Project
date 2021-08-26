@@ -70,6 +70,20 @@ abstract class GeneratorService  {
 
     // #endregion
 
+       // #region generatorName [ rgba(255, 0, 0, 1) ]
+
+       private cookieMultiplier: number;
+
+       public get getCookieMultiplier(): number {
+           return this.cookieMultiplier;
+       }
+
+        public set setCookieMultiplier(cookieMultiplier: number) {
+            this.cookieMultiplier = cookieMultiplier;
+        }
+   
+    // #endregion
+
     private costMultiplier: number = 1.08;
 
     protected constructor(generatorName: string, generatorValue: number, generatorPrice: number, resourceName: string) {
@@ -78,11 +92,12 @@ abstract class GeneratorService  {
         this.generatorPrice = generatorPrice;
         this.resourceName = resourceName;
         this.upgradeMultiplier = 1;
+        this.cookieMultiplier = 1;
         this.generatorCount = 0;
     }
 
     protected increment(): void {
-        VariableStore.updateMemberResource(this.generatorValue * this.upgradeMultiplier * this.generatorCount);
+        VariableStore.updateMemberResource(this.generatorValue * this.upgradeMultiplier * this.generatorCount * this.cookieMultiplier);
         console.log(VariableStore.getGeneratorServiceByName(this.getGeneratorName));
     }
 

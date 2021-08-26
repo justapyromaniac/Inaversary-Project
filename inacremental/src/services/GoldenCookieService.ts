@@ -49,7 +49,7 @@ export default class GoldenCookieService{
         .filter(generator => generator.generatorType === this.cookieType && this.generatorName === generator.generatorName)
         .forEach(generator=>{
             let temp = VariableStore.getGeneratorServiceByName(generator.generatorName);
-            temp.setUpgradeMultiplier = temp.getUpgradeMultiplier * 10;
+            temp.setCookieMultiplier = 10;
         });
     }
 
@@ -58,7 +58,7 @@ export default class GoldenCookieService{
         .filter(generator => generator.generatorType === this.cookieType && this.generatorName === generator.generatorName)
         .forEach(generator=>{
             let temp = VariableStore.getGeneratorServiceByName(generator.generatorName);
-            temp.setUpgradeMultiplier = temp.getUpgradeMultiplier / 10;
+            temp.setUpgradeMultiplier = 1;
         });
     }
 
