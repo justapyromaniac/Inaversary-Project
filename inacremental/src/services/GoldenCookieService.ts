@@ -36,8 +36,6 @@ export default class GoldenCookieService{
     }
     
     public applyCookieEffect(): void{
-        this.cookieType = 'passive';
-
         if(this.cookieType === 'fixed'){
             VariableStore.addPercentage(15);
         }else{
