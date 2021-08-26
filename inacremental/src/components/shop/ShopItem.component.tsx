@@ -1,4 +1,5 @@
 import { Button, Grid, makeStyles, Tooltip, Typography } from '@material-ui/core';
+import { Console } from 'console';
 import _ from 'lodash';
 import { useCallback, useEffect, useState } from 'react';
 import { Generator } from '../../services/Generator';
@@ -42,7 +43,7 @@ export const ShopItemComponent: React.FC<Generator> = (generator: Generator) => 
 
     useEffect(() => {
         VariableStore.registerObserver(onUpdate);
-        setGeneratorAvailable(generator.generatorPrice <= currentResourceValue);
+        setGeneratorAvailable(generatorService.calculateGeneratorCost() <= currentResourceValue);
         return () => {
             VariableStore.removeObserver(onUpdate);
         }

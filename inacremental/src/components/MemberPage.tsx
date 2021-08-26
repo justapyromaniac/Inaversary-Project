@@ -103,7 +103,7 @@ export const MembersPageComponent: React.FC = () => {
     */
     return(
         <Grid container className={classes.gridContainer}>
-            {/*<GoldenCookieComponent cookieService={goldenCookieService}/>*/}
+            <GoldenCookieComponent cookieService={goldenCookieService}/>
             <Grid item xs={4} className={classes.gridItem}>
                 <Typography>{currentMember.name}</Typography>
                 <br/>
