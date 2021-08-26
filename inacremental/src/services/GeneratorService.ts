@@ -83,6 +83,7 @@ abstract class GeneratorService  {
 
     protected increment(): void {
         VariableStore.updateMemberResource(this.generatorValue * this.upgradeMultiplier * this.generatorCount);
+        console.log(VariableStore.getGeneratorServiceByName(this.getGeneratorName));
     }
 
     public purchaseUpgrade(upgradeMultiplier: number, upgradeCost: number): void{
